@@ -37,6 +37,7 @@ let op4 = document.getElementById('option-4');
 /**
  * Function takes the id and displays relavant questions and options
  * Sets the question and the question number using the id
+ * Assigns each answer an 
  */
 function displayQuestion(id){
 //sets id for question and displays correct question number for the users
@@ -49,7 +50,14 @@ op1.innerText = questions[id].a[0].text;
 op2.innerText = questions[id].a[1].text;
 op3.innerText = questions[id].a[2].text;
 op4.innerText = questions[id].a[3].text;
-order.innerHTML = ++id;
+//assigns the isCorrect value to buttons
+op1.value = questions[id].a[0].isCorrect;
+op2.value = questions[id].a[1].isCorrect;
+op3.value = questions[id].a[2].isCorrect;
+op4.value = questions[id].a[3].isCorrect;
+order.innerText = ++id;
 };
-
+/**
+ * 
+ */
 displayQuestion(0);
