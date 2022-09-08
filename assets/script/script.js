@@ -27,37 +27,58 @@ const questions = [
         {text : "A Horse", isCorrect : false},
         {text : "A Computer", isCorrect : false}]}]
 
+let score = document.getElementById('score');        
 let question = document.getElementById('question');
-//question.innerText = questions[0].q;
+let button = document.getElementById('button');
 let op1 = document.getElementById('option-1');
 let op2 = document.getElementById('option-2');
 let op3 = document.getElementById('option-3');
 let op4 = document.getElementById('option-4');
 
 /**
- * Function takes the id and displays relavant questions and options
- * Sets the question and the question number using the id
+ * Function takes the id and displays relavant questions and options.
+ * Sets the question and the question number using the id.
  * Assigns each answer an 
  */
 function displayQuestion(id){
-//sets id for question and displays correct question number for the users
-let order = document.getElementById('number');
+    //sets id for question and displays correct question number for the users
+    let order = document.getElementById('number');
 
-//check id and display the relevant question
-question.innerHTML = questions[id].q;
-//sets the question buttons
-op1.innerText = questions[id].a[0].text;
-op2.innerText = questions[id].a[1].text;
-op3.innerText = questions[id].a[2].text;
-op4.innerText = questions[id].a[3].text;
-//assigns the isCorrect value to buttons
-op1.value = questions[id].a[0].isCorrect;
-op2.value = questions[id].a[1].isCorrect;
-op3.value = questions[id].a[2].isCorrect;
-op4.value = questions[id].a[3].isCorrect;
-order.innerText = ++id;
+    //check id and display the relevant question
+    question.innerHTML = questions[id].q;
+    //sets the question buttons
+    op1.innerText = questions[id].a[0].text;
+    op2.innerText = questions[id].a[1].text;
+    op3.innerText = questions[id].a[2].text;
+    op4.innerText = questions[id].a[3].text;
+    //assigns the isCorrect value to buttons
+    op1.value = questions[id].a[0].isCorrect;
+    op2.value = questions[id].a[1].isCorrect;
+    op3.value = questions[id].a[2].isCorrect;
+    op4.value = questions[id].a[3].isCorrect;
+    order.innerText = ++id;
 };
 /**
- * 
+ * Checks the value of isCorrect in in the buttons.
+ * If isCorrect is true, it adds to the score and changes the button colour.
+ * If isCorrect is false it displays the correct answer and changes the button colour.
  */
+function CheckAnswer(isCorrect){
+//read the value of the button pressed
+    if (isCorrect == true){
+       score = score++;
+       button.style.backGroundColor = 'green';
+    }
+    else{
+        button.style.backGroundColor = 'red';
+        displayCorrect();
+    }
+};
+/**
+ * Starts a new question loop.
+ * Changes the id so that the correct questions are displayed.
+ */
+function nextQuestion(){};
+function displayCorrect(){};
 displayQuestion(0);
+CheckAnswer();
