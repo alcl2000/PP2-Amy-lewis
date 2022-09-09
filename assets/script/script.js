@@ -26,14 +26,14 @@ const questions = [
         { text : "A Robot", isCorrect : false},
         {text : "A Horse", isCorrect : false},
         {text : "A Computer", isCorrect : false}]}]
-
+//assignments 
 let score = document.getElementById('score');        
 let question = document.getElementById('question');
-let button = document.getElementById('button');
 let op1 = document.getElementById('option-1');
 let op2 = document.getElementById('option-2');
 let op3 = document.getElementById('option-3');
 let op4 = document.getElementById('option-4');
+let buttons = document.getElementsByClassName('answer');
 
 /**
  * Function takes the id and displays relavant questions and options.
@@ -65,13 +65,14 @@ function displayQuestion(id){
  */
 function CheckAnswer(isCorrect){
 //read the value of the button pressed
+
     if (isCorrect == true){
        score = score++;
-       button.style.backGroundColor = 'green';
+       alert('correct');
     }
     else{
-        button.style.backGroundColor = 'red';
-        displayCorrect();
+        alert('incorrect');
+        //displayCorrect();
     }
 };
 /**
@@ -81,4 +82,6 @@ function CheckAnswer(isCorrect){
 function nextQuestion(){};
 function displayCorrect(){};
 displayQuestion(0);
-CheckAnswer();
+for(let button of buttons){
+    button.addEventListener("click", CheckAnswer());
+}
