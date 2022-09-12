@@ -29,10 +29,10 @@ const questions = [
 //assignments 
 let score = document.getElementById('score');        
 let question = document.getElementById('question');
-let op1 = document.getElementById('option-1');
-let op2 = document.getElementById('option-2');
-let op3 = document.getElementById('option-3');
-let op4 = document.getElementById('option-4');
+var op1 = document.getElementById('option-1');
+var op2 = document.getElementById('option-2');
+var op3 = document.getElementById('option-3');
+var op4 = document.getElementById('option-4');
 let buttons = document.getElementsByClassName('answer');
 
 /**
@@ -62,9 +62,9 @@ function displayQuestion(id){
  * If isCorrect is true, it adds to the score and changes the button colour.
  * If isCorrect is false it displays the correct answer and changes the button colour.
  */
-function checkAnswer(i){
+function checkAnswer(event){
 //read the value of the button pressed; 
-    if (op[i].value === "true" ){
+    if (op1.value === 'true' || op2.value == 'true' || op3.value == 'true' ||op4.value == 'true'){
        score = ++score;
        alert('correct');
     }
@@ -72,6 +72,7 @@ function checkAnswer(i){
         alert('incorrect');
         displayCorrect();
     }
+    nextQuestion();
 };
 /**
  * Starts a new question loop.
@@ -80,10 +81,10 @@ function checkAnswer(i){
 function nextQuestion(){};
 function displayCorrect(){};
 function loadAnalysis(){
-   for(let i = 0 ; i >= buttons.length ; i++){
-    buttons[i].addEventListener("click", CheckAnswer(i));
-    }; 
-    return [i];
+    op1.addEventListener('click',checkAnswer(),'once');
+    op2.addEventListener('click',checkAnswer(),'once');
+    op3.addEventListener('click',checkAnswer(),'once');
+    op4.addEventListener('click',checkAnswer(),'once');
 };
 // page load 
-document.addEventListener('load',displayQuestion(id = 0),loadAnalysis());
+document.addEventListener('load', displayQuestion(id = 0), loadAnalysis());
