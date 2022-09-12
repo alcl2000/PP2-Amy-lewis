@@ -64,8 +64,8 @@ function displayQuestion(id){
  */
 function checkAnswer(event){
 //read the value of the button pressed; 
-    if (op1.value === 'true' || op2.value == 'true' || op3.value == 'true' ||op4.value == 'true'){
-       score = ++score;
+    if (op1.value == 'true' || op2.value == 'true' || op3.value == 'true' ||op4.value == 'true'){
+       ++score;
        alert('correct');
     }
     else{
@@ -78,13 +78,16 @@ function checkAnswer(event){
  * Starts a new question loop.
  * Changes the id so that the correct questions are displayed.
  */
-function nextQuestion(){};
+function nextQuestion(){
+    id >= questions.length ? id++ : endQuiz();
+};
 function displayCorrect(){};
-function loadAnalysis(){
+function endQuiz(){};
+function loadAnalysis(event){
     op1.addEventListener('click',checkAnswer(),'once');
     op2.addEventListener('click',checkAnswer(),'once');
     op3.addEventListener('click',checkAnswer(),'once');
     op4.addEventListener('click',checkAnswer(),'once');
 };
 // page load 
-document.addEventListener('load', displayQuestion(id = 0), loadAnalysis());
+document.addEventListener('onLoad', displayQuestion(id = 0), loadAnalysis());
