@@ -43,7 +43,6 @@ let buttons = document.getElementsByClassName('answer');
 function displayQuestion(id){
     //sets id for question and displays correct question number for the users
     let order = document.getElementById('number');
-
     //check id and display the relevant question
     question.innerHTML = questions[id].q;
     //sets the question buttons
@@ -63,16 +62,15 @@ function displayQuestion(id){
  * If isCorrect is true, it adds to the score and changes the button colour.
  * If isCorrect is false it displays the correct answer and changes the button colour.
  */
-function CheckAnswer(isCorrect){
-//read the value of the button pressed
-
-    if (isCorrect == true){
-       score = score++;
+function checkAnswer(i){
+//read the value of the button pressed; 
+    if (op[i].value === "true" ){
+       score = ++score;
        alert('correct');
     }
     else{
         alert('incorrect');
-        //displayCorrect();
+        displayCorrect();
     }
 };
 /**
@@ -81,7 +79,11 @@ function CheckAnswer(isCorrect){
  */
 function nextQuestion(){};
 function displayCorrect(){};
-displayQuestion(0);
-for(let button of buttons){
-    button.addEventListener("click", CheckAnswer());
-}
+function loadAnalysis(){
+   for(let i = 0 ; i >= buttons.length ; i++){
+    buttons[i].addEventListener("click", CheckAnswer(i));
+    }; 
+    return [i];
+};
+// page load 
+document.addEventListener('load',displayQuestion(id = 0),loadAnalysis());
