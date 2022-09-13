@@ -64,7 +64,8 @@ function displayQuestion(id){
  */
 function checkAnswer(event){
 //read the value of the button pressed; 
-    if (op1.value == 'true' || op2.value == 'true' || op3.value == 'true' ||op4.value == 'true'){
+    let selected = document.getElementById('selected');
+    if (selected.value == true){
        ++score;
        alert('correct');
     }
@@ -79,15 +80,21 @@ function checkAnswer(event){
  * Changes the id so that the correct questions are displayed.
  */
 function nextQuestion(){
+    let id = document.getElementById('question').innerText;
     id >= questions.length ? id++ : endQuiz();
 };
 function displayCorrect(){};
 function endQuiz(){};
-function loadAnalysis(event){
-    op1.addEventListener('click',checkAnswer(),'once');
-    op2.addEventListener('click',checkAnswer(),'once');
-    op3.addEventListener('click',checkAnswer(),'once');
-    op4.addEventListener('click',checkAnswer(),'once');
-};
+//function loadAnalysis(event){
+//    op1.addEventListener('click',checkAnswer(),[once]);
+//    op2.addEventListener('click',checkAnswer(),[once]);
+//    op3.addEventListener('click',checkAnswer(),[once]);
+//    op4.addEventListener('click',checkAnswer(),[once]);
+//};
 // page load 
-document.addEventListener('onLoad', displayQuestion(id = 0), loadAnalysis());
+document.addEventListener('onLoad', displayQuestion(0), loadAnalysis(event));
+
+for (let button of buttons){
+    button.addEventListener(click, loadAnalysis());
+    break;
+}
