@@ -64,8 +64,8 @@ function displayQuestion(id){
  */
 function checkAnswer(event){
 //read the value of the button pressed; 
-    let selected = document.getElementById('selected');
-    if (selected.value == true){
+    let selected = document.getElementsByClassName('active').value;
+    if (selected == 'true'){
        ++score;
        alert('correct');
     }
@@ -82,7 +82,11 @@ function checkAnswer(event){
 function nextQuestion(){
     let id = document.getElementById('question').innerText;
     id >= questions.length ? id++ : endQuiz();
+    buttons.className -= "active";
 };
+function loadAnalysis(){
+    buttons.className += " active";
+}
 function displayCorrect(){};
 function endQuiz(){};
 document.addEventListener('onLoad', displayQuestion(0), loadAnalysis(event));
