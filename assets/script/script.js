@@ -85,16 +85,4 @@ function nextQuestion(){
 };
 function displayCorrect(){};
 function endQuiz(){};
-//function loadAnalysis(event){
-//    op1.addEventListener('click',checkAnswer(),[once]);
-//    op2.addEventListener('click',checkAnswer(),[once]);
-//    op3.addEventListener('click',checkAnswer(),[once]);
-//    op4.addEventListener('click',checkAnswer(),[once]);
-//};
-// page load 
 document.addEventListener('onLoad', displayQuestion(0), loadAnalysis(event));
-
-for (let button of buttons){
-    button.addEventListener(click, loadAnalysis());
-    break;
-}
