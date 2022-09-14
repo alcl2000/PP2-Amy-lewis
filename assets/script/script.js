@@ -1,10 +1,10 @@
 const questions = [
   {id : 0,
    q : "What is the name of Nadja's reincarnated lover?",
-   a: [{ text : "Jeff", isCorrect : true},
-       { text: "Michael", isCorrect : false},
-       { text: "Jesk", isCorrect : false},
-       { text: "Ryan", isCorrect : false}]
+   a: [{ text : "Jeff", isCorrect : 'true'},
+       { text: "Michael", isCorrect : 'false'},
+       { text: "Jesk", isCorrect : 'false'},
+       { text: "Ryan", isCorrect : 'false'}]
    },{
     id : 1,
     q : "Which famous murderer does Lazslo claim to be?",
@@ -33,7 +33,7 @@ var op1 = document.getElementById('option-1');
 var op2 = document.getElementById('option-2');
 var op3 = document.getElementById('option-3');
 var op4 = document.getElementById('option-4');
-let buttons = document.getElementsByClassName('answer');
+let options = document.getElementsByClassName('answer');
 
 /**
  * Function takes the id and displays relavant questions and options.
@@ -82,11 +82,16 @@ function checkAnswer(event){
 function nextQuestion(){
     let id = document.getElementById('question').innerText;
     id >= questions.length ? id++ : endQuiz();
-    buttons.className -= "active";
+    options.className -= "active";
 };
-function loadAnalysis(){
-    buttons.className += " active";
-}
+
 function displayCorrect(){};
 function endQuiz(){};
-document.addEventListener('onLoad', displayQuestion(0), loadAnalysis(event));
+document.addEventListener('onLoad', displayQuestion(0));
+for (let option of options){
+     option.addEventListener('click', function loadAnalysis(){
+        options.className += 'active';
+        let active = document.getElementsByClassName('active');
+        console.log('clicked');
+    });
+};
