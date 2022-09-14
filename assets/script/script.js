@@ -1,7 +1,7 @@
 const questions = [
   {id : 0,
    q : "What is the name of Nadja's reincarnated lover?",
-   a: [{ text : "Jeff", isCorrect : 'true'},
+   a: [ {text : "Jeff", isCorrect : 'true'},
        { text: "Michael", isCorrect : 'false'},
        { text: "Jesk", isCorrect : 'false'},
        { text: "Ryan", isCorrect : 'false'}]
@@ -62,9 +62,8 @@ function displayQuestion(id){
  * If isCorrect is true, it adds to the score and changes the button colour.
  * If isCorrect is false it displays the correct answer and changes the button colour.
  */
-function checkAnswer(event){
+function checkAnswer(selected){
 //read the value of the button pressed; 
-    let selected = document.getElementsByClassName('active').value;
     if (selected == 'true'){
        ++score;
        alert('correct');
@@ -81,7 +80,7 @@ function checkAnswer(event){
  */
 function nextQuestion(){
     let id = document.getElementById('question').innerText;
-    id >= questions.length ? id++ : endQuiz();
+    id > questions.length ? id++ : endQuiz();
     options.className -= "active";
 };
 
@@ -90,8 +89,7 @@ function endQuiz(){};
 document.addEventListener('onLoad', displayQuestion(0));
 for (let option of options){
      option.addEventListener('click', function loadAnalysis(){
-        options.className += 'active';
-        let active = document.getElementsByClassName('active');
-        console.log('clicked');
+        let selected = option.value;
+        checkAnswer(selected);
     });
 };
