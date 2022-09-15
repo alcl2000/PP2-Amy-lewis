@@ -33,6 +33,7 @@ const questions = [
         {text : "", isCorrect : ""},
         {text : "", isCorrect : ""}]}]
 //assignments 
+let order = document.getElementById('number');
 let scoreBox = document.getElementById('score');
 let score = 0;      
 let question = document.getElementById('question');
@@ -51,7 +52,7 @@ let correctArea = document.getElementById('correct-answer');
  */
 function displayQuestion(id){
     //sets id for question and displays correct question number for the users
-    let order = document.getElementById('number');
+    
     //check id and display the relevant question
     question.innerHTML = questions[id].q;
     //sets the question buttons
@@ -82,15 +83,14 @@ function checkAnswer(selected){
         alert('incorrect');
         displayCorrect();
     }
-    nextQuestion();
 };
 /**
  * Starts a new question loop.
  * Changes the id so that the correct questions are displayed.
  */
-function nextQuestion(){
-    let id = document.getElementById('question').innerText;
-    id > questions.length ? id++ : endQuiz();
+function nextQuestion(id){
+    id = order.innerText;
+    id > questions.length ? ++id : endQuiz();
 };
 /**
  * This function checks the correct answer and displays it in the event that a user enters the incorrect answer.
