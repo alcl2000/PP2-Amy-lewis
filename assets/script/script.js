@@ -25,7 +25,13 @@ const questions = [
     a: [{text: "A Doll", isCorrect : true},
         { text : "A Robot", isCorrect : false},
         {text : "A Horse", isCorrect : false},
-        {text : "A Computer", isCorrect : false}]}]
+        {text : "A Computer", isCorrect : false}]},
+    {id: 4 ,
+    q: "",
+    a: [{text : "", isCorrect : ""},
+        {text : "", isCorrect : ""},
+        {text : "", isCorrect : ""},
+        {text : "", isCorrect : ""}]}]
 //assignments 
 let score = document.getElementById('score');        
 let question = document.getElementById('question');
@@ -34,6 +40,8 @@ var op2 = document.getElementById('option-2');
 var op3 = document.getElementById('option-3');
 var op4 = document.getElementById('option-4');
 let options = document.getElementsByClassName('answer');
+let correctBox = document.getElementsByClassName('correct');
+let correctArea = document.getElementById('correct-answer');
 
 /**
  * Function takes the id and displays relavant questions and options.
@@ -65,7 +73,7 @@ function displayQuestion(id){
 function checkAnswer(selected){
 //read the value of the button pressed; 
     if (selected == 'true'){
-       ++score;
+       score++;
        alert('correct');
     }
     else{
@@ -81,9 +89,12 @@ function checkAnswer(selected){
 function nextQuestion(){
     let id = document.getElementById('question').innerText;
     id > questions.length ? id++ : endQuiz();
-    options.className -= "active";
 };
-
+/**
+ * This function checks the correct answer and displays it in the event that a user enters the incorrect answer.
+ * Iterates through the questions and answer responses to check the correct answer
+ * Displays or hides the correct answer area for the user
+ */
 function displayCorrect(){};
 function endQuiz(){};
 document.addEventListener('onLoad', displayQuestion(0));
@@ -93,3 +104,4 @@ for (let option of options){
         checkAnswer(selected);
     });
 };
+document.getElementById('next-question').addEventListener('click',nextQuestion());
