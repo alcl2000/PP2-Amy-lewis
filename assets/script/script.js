@@ -33,7 +33,8 @@ const questions = [
         {text : "", isCorrect : ""},
         {text : "", isCorrect : ""}]}]
 //assignments 
-let score = document.getElementById('score');        
+let scoreBox = document.getElementById('score');
+let score = 0;      
 let question = document.getElementById('question');
 var op1 = document.getElementById('option-1');
 var op2 = document.getElementById('option-2');
@@ -64,6 +65,7 @@ function displayQuestion(id){
     op3.value = questions[id].a[2].isCorrect;
     op4.value = questions[id].a[3].isCorrect;
     order.innerText = ++id;
+    scoreBox.innerText = 0;
 };
 /**
  * Checks the value of isCorrect in in the buttons.
@@ -73,7 +75,7 @@ function displayQuestion(id){
 function checkAnswer(selected){
 //read the value of the button pressed; 
     if (selected == 'true'){
-       score++;
+       scoreBox.innerText = ++score;
        alert('correct');
     }
     else{
