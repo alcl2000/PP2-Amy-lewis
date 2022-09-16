@@ -35,7 +35,8 @@ const questions = [
 //assignments 
 let order = document.getElementById('number');
 let scoreBox = document.getElementById('score');
-let score = 0;      
+let score = 0;
+let id = 0;      
 let question = document.getElementById('question');
 var op1 = document.getElementById('option-1');
 var op2 = document.getElementById('option-2');
@@ -50,9 +51,7 @@ let correctArea = document.getElementById('correct-answer');
  * Sets the question and the question number using the id.
  * Assigns each answer an 
  */
-function displayQuestion(id){
-    //sets id for question and displays correct question number for the users
-    
+function displayQuestion(id){ 
     //check id and display the relevant question
     question.innerHTML = questions[id].q;
     //sets the question buttons
@@ -65,7 +64,9 @@ function displayQuestion(id){
     op2.value = questions[id].a[1].isCorrect;
     op3.value = questions[id].a[2].isCorrect;
     op4.value = questions[id].a[3].isCorrect;
+    //displays the correct question number for the users
     order.innerText = ++id;
+    order.value = id;
     scoreBox.innerText = 0;
 };
 /**
@@ -88,9 +89,13 @@ function checkAnswer(selected){
  * Starts a new question loop.
  * Changes the id so that the correct questions are displayed.
  */
-function nextQuestion(id){
-    id = order.innerText;
-    id > questions.length ? ++id : endQuiz();
+function nextQuestion(){
+    //checks the id for the array
+    //id = order.value;
+    //if the id is higher than the length of the array, add one to the id, otherwise end quiz
+    //id < questions.length ? 
+    displayQuestion(id++)
+     //: endQuiz();
 };
 /**
  * This function checks the correct answer and displays it in the event that a user enters the incorrect answer.
@@ -99,11 +104,11 @@ function nextQuestion(id){
  */
 function displayCorrect(){};
 function endQuiz(){};
-document.addEventListener('onLoad', displayQuestion(0));
+document.getElementById('next-question').addEventListener('click',function() {nextQuestion()});
+document.addEventListener('onLoad', displayQuestion(id));
 for (let option of options){
      option.addEventListener('click', function loadAnalysis(){
         let selected = option.value;
         checkAnswer(selected);
     });
 };
-document.getElementById('next-question').addEventListener('click',nextQuestion());
