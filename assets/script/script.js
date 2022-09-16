@@ -90,12 +90,8 @@ function checkAnswer(selected){
  * Changes the id so that the correct questions are displayed.
  */
 function nextQuestion(){
-    //checks the id for the array
-    //id = order.value;
     //if the id is higher than the length of the array, add one to the id, otherwise end quiz
-    //id < questions.length ? 
-    displayQuestion(id++)
-     //: endQuiz();
+    id < questions.length ? displayQuestion(id++): endQuiz();
 };
 /**
  * This function checks the correct answer and displays it in the event that a user enters the incorrect answer.
