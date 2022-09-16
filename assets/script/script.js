@@ -152,7 +152,7 @@ function endQuiz(score){
    let finalScore = document.getElementById('final-score');
    finalScore.innerText = score;
 };
-document.getElementById('next-question').addEventListener('click',function() {nextQuestion()});
+document.getElementById('next-question').addEventListener('click',function(){nextQuestion()});
 document.addEventListener('onLoad', displayQuestion(id));
 for (let option of options){
      option.addEventListener('click', function loadAnalysis(){
