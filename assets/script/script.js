@@ -122,6 +122,7 @@ function checkAnswer(selected){
     if (selected == 'true'){
        scoreBox.innerText = ++score;
        alert('correct');
+       nextQuestion();
     }
     else{
         alert('incorrect');
@@ -134,6 +135,7 @@ function checkAnswer(selected){
  */
 function nextQuestion(){
     //if the id is higher than the length of the array, add one to the id, otherwise end quiz
+    score = scoreBox.innerText;
     id < questions.length ? displayQuestion(id++): endQuiz(score);
 };
 /**
