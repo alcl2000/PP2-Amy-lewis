@@ -110,7 +110,7 @@ function displayQuestion(id){
     //displays the correct question number for the users
     order.innerText = ++id;
     order.value = id;
-    scoreBox.innerText = 0;
+    scoreBox.innerText = score;
 };
 /**
  * Checks the value of isCorrect in in the buttons.
@@ -134,7 +134,7 @@ function checkAnswer(selected){
  */
 function nextQuestion(){
     //if the id is higher than the length of the array, add one to the id, otherwise end quiz
-    id < questions.length ? displayQuestion(id++): endQuiz();
+    id < questions.length ? displayQuestion(id++): endQuiz(score);
 };
 /**
  * This function checks the correct answer and displays it in the event that a user enters the incorrect answer.
@@ -142,7 +142,14 @@ function nextQuestion(){
  * Displays or hides the correct answer area for the user
  */
 function displayCorrect(){};
-function endQuiz(){};
+/**
+ * Takes the user's score and then changes the text displayed to match their result
+ */
+function endQuiz(score){
+   window.location.replace('results.html');
+   let finalScore = document.getElementById('final-score');
+   finalScore.innerText = score;
+};
 document.getElementById('next-question').addEventListener('click',function() {nextQuestion()});
 document.addEventListener('onLoad', displayQuestion(id));
 for (let option of options){
