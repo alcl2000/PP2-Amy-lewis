@@ -28,3 +28,11 @@ When a question is answered the quiz page will either confirm the user got the q
 The buttons display the correct answer sets for each question
 ### Results Page
 The results page displays the user's final score at the end of the quiz, along with a short paragraph describing their results.
+---
+## Credits 
+### Technology used
+This project is built using HTML, CSS and JavaScript only
+### Assets
+### Other content
+#### Tutorials
+[JS quiz tutorial](https://www.geeksforgeeks.org/how-to-create-a-simple-javascript-quiz/)
