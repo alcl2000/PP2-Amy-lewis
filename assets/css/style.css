@@ -1,0 +1,34 @@
+/*Globals */
+:root{
+   --black : rgb(47, 47, 47);
+   --purple: rgb(164, 57, 183);
+   --green : rgb(47, 231, 59);
+   --blue : rgb(52,192,208);
+   --pink : rgb(250,141,242);
+   --white : rgb(254, 255, 255);
+}
+body{
+    background-color: var(--black)
+}
+h1 {
+    color: var(--purple);
+    font-family: 'Grenze Gotisch', cursive;
+    font-weight: 500;
+    font-size: 4rem;
+    text-align: center;
+}
+
+p{
+    /*background-color: var(--white);*/
+    color: var(--blue);
+    padding: 0 2rem;
+}
+/* Quiz page*/
+h3{
+    color: var(--purple);
+    font-family: 'PT Serif', serif;
+}
+.answer{
+    font-family: 'Roboto Condensed',sans-serif;
+    border-color: var(--green) ;
+}
