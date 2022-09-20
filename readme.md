@@ -34,5 +34,9 @@ The results page displays the user's final score at the end of the quiz, along w
 This project is built using HTML, CSS and JavaScript only
 ### Assets
 ### Other content
+#### Google Fonts used
+- [PT Serif](https://fonts.google.com/?query=ParaType&category=Serif,Monospace&preview.text=Question%201:&preview.text_type=custom)
+- [Roboto Condensed](https://fonts.google.com/specimen/Roboto+Condensed?query=roboto&category=Serif,Sans+Serif,Display,Monospace&preview.text=Question%201:&preview.text_type=custom)
+- [Grenze Gotisch](https://fonts.google.com/specimen/Grenze+Gotisch)
 #### Tutorials
 [JS quiz tutorial](https://www.geeksforgeeks.org/how-to-create-a-simple-javascript-quiz/)
