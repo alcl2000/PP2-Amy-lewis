@@ -32,7 +32,7 @@ header{
 }
 
 p{
-    color: var(--black);
+    color: var(--outer-space-crayola);
     font-family: 'Roboto Condensed', sans-serif;
     padding: 0 2rem;
 }
@@ -58,5 +58,19 @@ img{
 }
 /*Quiz*/
 #game-area{
-    background: var(--white);
+    background: var(--light-periwinkle);
+    border: 2px solid var(--dark-violet);
+    max-width: 80%;
+    margin: auto;
+    margin-top: 5%;
+}
+.answer{
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    border: 2px solid var(--persian-indigo);
+    border-radius: 20%;
+    background-color: var(--alice-blue);
+    padding: 10px 16px;
+    display: block;
+    margin: 10px auto;
 }
