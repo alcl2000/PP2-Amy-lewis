@@ -1,11 +1,11 @@
 /*Globals */
 :root{
    --black : rgb(47, 47, 47);
-   --purple: rgb(164, 57, 183);
+   --purple: rgb(139, 77, 147);
    --green : rgb(47, 231, 59);
    --blue : rgb(52,192,208);
    --pink : rgb(250,141,242);
-   --red : rgb(172, 21, 21);
+   --red : rgb(206, 0, 0);
    --white : rgb(250, 245, 245);
    --grey : rgb(187, 184, 184);
 }
@@ -19,16 +19,18 @@ h1 {
     font-weight: 500;
     font-size: 4rem;
     text-align: center;
+    margin-top: 0;
 }
 /*header*/
 header{
     background-color: var(--grey);
     border-bottom: 2px solid var(--purple);
+    font-size: 2em;
+    text-align: center;
 }
 
 p{
     color: var(--black);
-    
     font-family: 'Roboto Condensed', sans-serif;
     padding: 0 2rem;
 }
@@ -36,10 +38,19 @@ p{
 #enter{
    background-color: var(--grey); 
    border: 5px solid var(--purple);
-   border-radius: 1%;
+   border-radius: 5%;
    max-width: 80%;
-   margin: auto auto ;
+   margin: auto ;
+   margin-top: 2rem;
+   margin-bottom: 2rem;
 }
 img{
     max-width: 250px;
+    margin: 1.5rem;
+}
+#enter>button{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    border-radius: 5%;
+    margin: 0 6rem 1rem;
 }
