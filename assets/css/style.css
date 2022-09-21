@@ -1,20 +1,22 @@
 /*Globals */
 :root{
-   --black : rgb(47, 47, 47);
-   --purple: rgb(139, 77, 147);
-   --green : rgb(47, 231, 59);
-   --blue : rgb(52,192,208);
-   --pink : rgb(250,141,242);
-   --red : rgb(206, 0, 0);
-   --white : rgb(250, 245, 245);
-   --grey : rgb(187, 184, 184);
+   --light-periwinkle: rgb(194, 200, 218);
+    --outer-space-crayola: rgb(59, 67, 68);
+    --tyrian-purple: rgb(94, 14, 75);
+    --dark-violet: rgb(148, 5, 219);
+    --ao-english: rgb(0, 129, 28);
+    --yellow-green-color-wheel: rgb(12, 168, 23);
+    --tiffany-blue: rgb(47, 189, 185);
+    --persian-indigo: rgb(38, 4, 124);
+    --alice-blue: rgb(232, 238, 242);
+    --barbie-pink: rgb(219, 29, 132);
 }
 body{
-    background-color: var(--black);
+    background-color: var(--outer-space-crayola);
     margin: 0;
 }
 h1 {
-    color: var(--red);
+    color: var(--barbie-pink);
     font-family: 'Grenze Gotisch', cursive;
     font-weight: 500;
     font-size: 4rem;
@@ -23,8 +25,8 @@ h1 {
 }
 /*header*/
 header{
-    background-color: var(--grey);
-    border-bottom: 2px solid var(--purple);
+    background-color: var(--light-periwinkle);
+    border-bottom: 2px solid var(--dark-violet);
     font-size: 2em;
     text-align: center;
 }
@@ -36,8 +38,8 @@ p{
 }
 /*Index*/
 #enter{
-   background-color: var(--grey); 
-   border: 5px solid var(--purple);
+   background-color: var(--light-periwinkle); 
+   border: 5px solid var(--dark-violet);
    border-radius: 5%;
    max-width: 80%;
    margin: auto ;
@@ -53,4 +55,8 @@ img{
     font-size: 20px;
     border-radius: 5%;
     margin: 0 6rem 1rem;
+}
+/*Quiz*/
+#game-area{
+    background: var(--white);
 }
