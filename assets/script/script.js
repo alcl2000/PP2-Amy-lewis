@@ -1,10 +1,10 @@
 const questions = [
   {id : 0,
    q : "What is the name of Nadja's reincarnated lover?",
-   a: [ {text : "Jeff", isCorrect : 'true'},
-       { text: "Michael", isCorrect : 'false'},
-       { text: "Jesk", isCorrect : 'false'},
-       { text: "Ryan", isCorrect : 'false'}]
+   a: [ {text : "Jeff", isCorrect : true},
+       { text: "Mike", isCorrect : false},
+       { text: "William", isCorrect : false},
+       { text: "Gregor", isCorrect : true}]
    },{
     id : 1,
     q : "Which famous murderer does Lazslo claim to be?",
@@ -75,6 +75,7 @@ const questions = [
         {text:"Simon the Devious", isCorrect:true},
         {text:"Count Rapula", isCorrect:false}]}]
 
+
 //assignments 
 let order = document.getElementById('number');
 let scoreBox = document.getElementById('score');
@@ -88,6 +89,7 @@ var op4 = document.getElementById('option-4');
 let options = document.getElementsByClassName('answer');
 let correctBox = document.getElementsByClassName('correct');
 let correctArea = document.getElementById('correct-answer');
+localStorage.setItem('score', "");
 
 /**
  * Function takes the id and displays relavant questions and options.
@@ -111,6 +113,7 @@ function displayQuestion(id){
     order.innerText = ++id;
     order.value = id;
     scoreBox.innerText = score;
+    localStorage.score = score;
 };
 /**
  * Checks the value of isCorrect in in the buttons.
@@ -118,6 +121,8 @@ function displayQuestion(id){
  * If isCorrect is false it displays the correct answer and changes the button colour.
  */
 function checkAnswer(selected){
+// preven the buttons being re-pressed
+    
 //read the value of the button pressed; 
     if (selected == 'true'){
        scoreBox.innerText = ++score;
@@ -135,7 +140,7 @@ function checkAnswer(selected){
  */
 function nextQuestion(){
     //if the id is higher than the length of the array, add one to the id, otherwise end quiz
-    score = scoreBox.innerText;
+    score = scoreBox.innerText
     id < questions.length ? displayQuestion(id++): endQuiz(score);
 };
 /**
@@ -145,13 +150,16 @@ function nextQuestion(){
  */
 function displayCorrect(){};
 /**
- * Takes the user's score and then changes the text displayed to match their result
+ * Takes the user's score and transfers it through local data to the results page
  */
 function endQuiz(score){
    window.location.replace('results.html');
+   localStorage.getItem('score')
    let finalScore = document.getElementById('final-score');
    finalScore.innerText = score;
 };
+
+//document load
 document.getElementById('next-question').addEventListener('click',function(){nextQuestion()});
 document.addEventListener('onLoad', displayQuestion(id));
 for (let option of options){
@@ -160,3 +168,4 @@ for (let option of options){
         checkAnswer(selected);
     });
 };
+
