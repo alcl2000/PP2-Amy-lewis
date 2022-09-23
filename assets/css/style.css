@@ -1,8 +1,8 @@
 /*Globals */
 :root{
-   --light-periwinkle: rgb(194, 200, 218);
+    --light-periwinkle: rgb(194, 200, 218);
     --outer-space-crayola: rgb(59, 67, 68);
-    --tyrian-purple: rgb(94, 14, 75);
+    --tyrian-purple: rgb(104, 4, 5);
     --dark-violet: rgb(148, 5, 219);
     --ao-english: rgb(0, 129, 28);
     --yellow-green-color-wheel: rgb(12, 168, 23);
@@ -67,6 +67,7 @@ img{
 #question{
     font-family: 'PT Serif', serif;
     text-align: center;
+    color:var(--barbie-pink);
 }
 .answer , #next-question{
     font-family: 'Roboto', sans-serif;

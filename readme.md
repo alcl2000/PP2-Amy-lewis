@@ -28,10 +28,19 @@ When a question is answered the quiz page will either confirm the user got the q
 The buttons display the correct answer sets for each question
 ### Results Page
 The results page displays the user's final score at the end of the quiz, along with a short paragraph describing their results.
+
 ---
 ## Bugs 
 ### The Game did not always redirect users after a correct answer input
 The first question specifically did not automatically redirect for the user upon entering a correct answer. To solve this I added an if statement to the next question function, which checks if the id = 0. If it does, the next question is called but the id is iterated before that. Otherwise the next question is called as normal.
+### The assign result function was unable to parse the score value 
+
+---
+## Testing
+### Manual
+### Validators
+---
+## Deployment
 ---
 ## Credits 
 ### Technology used
