@@ -121,12 +121,13 @@ function displayQuestion(id){
  * If isCorrect is false it displays the correct answer and changes the button colour.
  */
 function checkAnswer(selected){
-// preven the buttons being re-pressed
+// prevent the buttons being re-pressed
     
 //read the value of the button pressed; 
     if (selected == 'true'){
        scoreBox.innerText = ++score;
        alert('correct');
+       console.log('answered correctly')
        nextQuestion();
     }
     else{
@@ -140,8 +141,16 @@ function checkAnswer(selected){
  */
 function nextQuestion(){
     //if the id is higher than the length of the array, add one to the id, otherwise end quiz
+    console.log('called next question')
+    console.log(id)
     score = scoreBox.innerText
-    id < questions.length ? displayQuestion(id++): endQuiz(score);
+    if (id === 0){
+        displayQuestion(++id);
+    }
+    else{
+    id < questions.length ? displayQuestion(++id): endQuiz(score);
+    }
+    console.log(id)
 };
 /**
  * This function checks the correct answer and displays it in the event that a user enters the incorrect answer.
