@@ -132,7 +132,8 @@ function checkAnswer(selected){
     }
     else{
         alert('incorrect');
-        displayCorrect();
+        displayCorrect(selected);
+        option.removeEventListener('click', loadAnalysis());
     }
 };
 /**
@@ -157,7 +158,11 @@ function nextQuestion(){
  * Iterates through the questions and answer responses to check the correct answer
  * Displays or hides the correct answer area for the user
  */
-function displayCorrect(){};
+function displayCorrect(selected){
+    let correctArea = getElementsByClassName('correct');
+    let correctAnswer = getElementById('correct-answer');
+    correctAnswer.innerHTML = selected;
+};
 /**
  * Takes the user's score and transfers it through local data to the results page
  */
