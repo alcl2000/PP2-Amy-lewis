@@ -9,6 +9,7 @@
     --tiffany-blue: rgb(47, 189, 185);
     --persian-indigo: rgb(38, 4, 124);
     --alice-blue: rgb(232, 238, 242);
+    --dark-white: rgb(237, 220, 242);
     --barbie-pink: rgb(219, 29, 132);
 }
 /*Universal Styles*/ 
@@ -27,6 +28,12 @@ h1 {
 a{
     text-decoration: none !important;
 }
+i:hover{
+    color: var(--barbie-pink);
+}
+a>button{
+    color: var(--outer-space-crayola);
+}
 button{
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
@@ -37,6 +44,9 @@ button{
     padding: 1rem;
     background-color: var(--alice-blue);
 }
+button:hover{
+    background-color: var(--dark-white);
+}
 /*header*/
 header{
     background-color: var(--light-periwinkle);
@@ -44,7 +54,6 @@ header{
     font-size: 2em;
     text-align: center;
 }
-
 p{
     color: var(--outer-space-crayola);
     font-family: 'Roboto Condensed', sans-serif;
@@ -88,5 +97,8 @@ img{
     margin: 10px auto;
 }
 #next-question{
-    border: 2px solid var(--tyrian-purple);
+    border: 2px solid var(--barbie-pink);
+}
+#next-question:hover{
+    background-color: var(--dark-white);
 }
