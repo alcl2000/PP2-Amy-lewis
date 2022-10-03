@@ -11,6 +11,7 @@
     --alice-blue: rgb(232, 238, 242);
     --barbie-pink: rgb(219, 29, 132);
 }
+/*Universal Styles*/ 
 body{
     background-color: var(--outer-space-crayola);
     margin: 0;
@@ -22,6 +23,19 @@ h1 {
     font-size: 4rem;
     text-align: center;
     margin-top: 0;
+}
+a{
+    text-decoration: none !important;
+}
+button{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: var(--outer-space-crayola);
+    border: 2px solid var(--barbie-pink);
+    border-radius: 5%;
+    margin: 6rem 1rem;
+    padding: 1rem;
+    background-color: var(--alice-blue);
 }
 /*header*/
 header{
@@ -49,12 +63,6 @@ p{
 img{
     max-width: 250px;
     margin: 1.5rem;
-}
-#enter>button{
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    border-radius: 5%;
-    margin: 0 6rem 1rem;
 }
 /*Quiz*/
 #game-area{
