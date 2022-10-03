@@ -59,16 +59,15 @@ p{
     font-family: 'Roboto Condensed', sans-serif;
     padding: 0 2rem;
 }
-/*Index*/
-#enter{
+#enter, #game-area, #result{
    background-color: var(--light-periwinkle); 
    border: 5px solid var(--dark-violet);
-   border-radius: 5%;
    max-width: 80%;
    margin: auto ;
    margin-top: 2rem;
    margin-bottom: 2rem;
 }
+/*Index*/
 img{
     max-width: 250px;
     margin: 1.5rem;
@@ -101,4 +100,16 @@ img{
 }
 #next-question:hover{
     background-color: var(--dark-white);
+}
+/*Results page*/
+#title , #result-text{
+    margin: 0 2rem;
+}
+#buttons>button{
+    display: inline;
+    margin: 1rem 6rem;
+}
+h2{
+    font-family: 'PT Serif', serif;
+    text-align: center;
 }
