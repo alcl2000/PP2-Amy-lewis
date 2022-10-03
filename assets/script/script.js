@@ -87,9 +87,10 @@ var op2 = document.getElementById('option-2');
 var op3 = document.getElementById('option-3');
 var op4 = document.getElementById('option-4');
 let options = document.getElementsByClassName('answer');
-let correctBox = document.getElementsByClassName('correct');
-let correctArea = document.getElementById('correct-answer');
 localStorage.setItem('score', "");
+let correctArea = document.getElementsByClassName('correct');
+let correctAnswer = document.getElementById('correct-answer');
+
 
 /**
  * Function takes the id and displays relavant questions and options.
@@ -127,12 +128,11 @@ function checkAnswer(selected){
     if (selected == 'true'){
        scoreBox.innerText = ++score;
        alert('correct');
-       console.log('answered correctly')
        nextQuestion();
     }
     else{
         alert('incorrect');
-        displayCorrect(selected);
+        displayCorrect(id);
         option.removeEventListener('click', loadAnalysis());
     }
 };
@@ -142,8 +142,6 @@ function checkAnswer(selected){
  */
 function nextQuestion(){
     //if the id is higher than the length of the array, add one to the id, otherwise end quiz
-    console.log('called next question')
-    console.log(id)
     score = scoreBox.innerText
     if (id === 0){
         displayQuestion(++id);
@@ -158,10 +156,9 @@ function nextQuestion(){
  * Iterates through the questions and answer responses to check the correct answer
  * Displays or hides the correct answer area for the user
  */
-function displayCorrect(selected){
-    let correctArea = getElementsByClassName('correct');
-    let correctAnswer = getElementById('correct-answer');
-    correctAnswer.innerHTML = selected;
+function displayCorrect(id){   
+    correctAnswer.innerHTML = corrected;
+    
 };
 /**
  * Takes the user's score and transfers it through local data to the results page
