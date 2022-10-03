@@ -101,6 +101,13 @@ img{
 #next-question:hover{
     background-color: var(--dark-white);
 }
+/*Correct answer area*/
+#correct-zone{
+    background-color: var(--alice-blue);
+    border: solid 2px var(--yellow-green-color-wheel);
+    max-width: 80%;
+    margin: auto;
+}
 /*Results page*/
 #title , #result-text{
     margin: 0 2rem;
