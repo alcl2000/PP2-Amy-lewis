@@ -34,6 +34,8 @@ The results page displays the user's final score at the end of the quiz, along w
 ### The Game did not always redirect users after a correct answer input
 The first question specifically did not automatically redirect for the user upon entering a correct answer. To solve this I added an if statement to the next question function, which checks if the id = 0. If it does, the next question is called but the id is iterated before that. Otherwise the next question is called as normal.
 ### The assign result function was unable to parse the score value 
+### The next question button was not calling the function correctly
+The next question button was supposed to call the nextQuestion function and iterate through the next question. The function was not being called corrrectly, and often was called before the button was clicked. This problem was fixed by passing the function through a proxy function to delay the function being called. 
 
 ---
 ## Testing
