@@ -130,7 +130,7 @@ function checkAnswer(selected){
     }
     else{
         alert('incorrect');
-        correctArea.style.display = 'block';
+        displayCorrect(id);
         }
     };
 /**
@@ -155,6 +155,24 @@ function endQuiz(score){
    localStorage.getItem('score')
    let finalScore = document.getElementById('final-score');
    finalScore.innerText = score;
+};
+/**
+ * 
+ */
+function displayCorrect(){
+    correctArea.style.display = 'block';
+    let id = order.value
+    let corrected;
+    for (j = 0; j = 3 ; j++){
+        if ( questions[id].a[j].isCorrect === 'true'){
+            let corrected = questions[id].a[j].text;
+            correctAnswer.innerText = corrected;
+        }
+        else{
+            correctArea.innerText = 'error';
+        }
+    }
+    
 };
 //document load
 document.addEventListener('onLoad', displayQuestion(id));
