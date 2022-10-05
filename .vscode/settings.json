@@ -23,5 +23,24 @@
    "files.autoSave": "off",
    "workbench.colorTheme": "Quiet Light",
    "terminal.integrated.gpuAcceleration": "canvas",
-   "editor.defaultFormatter": "HookyQR.beautify"
+   "editor.defaultFormatter": "HookyQR.beautify",
+   "cSpell.words": [
+      "colour",
+      "Dahmer",
+      "Daltry",
+      "favourite",
+      "Helsings",
+      "Jacksons",
+      "Kardashians",
+      "Lazslo",
+      "Marwa",
+      "Nadja",
+      "Nadja's",
+      "Nandor",
+      "Nasrin",
+      "neighbour",
+      "Rapula",
+      "Ritchie",
+      "Surfin"
+   ]
 }

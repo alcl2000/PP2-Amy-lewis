@@ -54,7 +54,7 @@ const questions = [
     q: "What city do Nadja and Guillermo move to?",
     a :[{text:"Ontario ", isCorrect: false},
         {text:"Mexico City", isCorrect: false},
-        {text:"Sacremento", isCorrect:false},
+        {text:"Sacramento", isCorrect:false},
         {text:"London", isCorrect: true}]},
     {id : 9,
     q: "Which of Nandor's wives does he decide to remarry?",
@@ -76,11 +76,11 @@ const questions = [
         {text:"Count Rapula", isCorrect: false}]}]
 
 
-//assignments 
+//assignments
 let order = document.getElementById('number');
 let scoreBox = document.getElementById('score');
 let score = 0;
-let id = 0;      
+let id = 0;
 let question = document.getElementById('question');
 var op1 = document.getElementById('option-1');
 var op2 = document.getElementById('option-2');
@@ -93,7 +93,7 @@ let correctAnswer = document.getElementById('correct-answer');
 
 
 /**
- * Function takes the id and displays relavant questions and options.
+ * Function takes the id and displays relevant questions and options.
  * Sets the question and the question number using the id.
  * Assigns each answer an 
  */
@@ -129,8 +129,9 @@ function checkAnswer(selected){
        nextQuestion();
     }
     else{
+        correctArea.style.display = 'block';
         alert('incorrect');
-        displayCorrect(id);
+        displayCorrect();
         }
     };
 /**
@@ -157,10 +158,9 @@ function endQuiz(score){
    finalScore.innerText = score;
 };
 /**
- * 
+ *
  */
 function displayCorrect(){
-    correctArea.style.display = 'block';
     let id = order.value
     let corrected;
     for (j = 0; j = 3 ; j++){
@@ -172,7 +172,6 @@ function displayCorrect(){
             correctArea.innerText = 'error';
         }
     }
-    
 };
 //document load
 document.addEventListener('onLoad', displayQuestion(id));
