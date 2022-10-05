@@ -158,7 +158,7 @@ function endQuiz(score){
    finalScore.innerText = score;
 };
 /**
- *
+ *This function checks the id currently being displayed, and then checks all possible answers in the object to then display the correct answer in a box.
  */
 function displayCorrect(){
     let id = --order.value
