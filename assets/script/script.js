@@ -161,16 +161,21 @@ function endQuiz(score){
  *
  */
 function displayCorrect(){
-    let id = order.value
-    let corrected;
-    for (j = 0; j = 3 ; j++){
-        if ( questions[id].a[j].isCorrect === 'true'){
-            let corrected = questions[id].a[j].text;
-            correctAnswer.innerText = corrected;
-        }
-        else{
-            correctArea.innerText = 'error';
-        }
+    let id = --order.value
+    if (questions[id].a[0].isCorrect === true){
+    document.getElementById('correct-answer').innerText = questions[id].a[0].text;
+    }
+    else if (questions[id].a[1].isCorrect === true){
+        document.getElementById('correct-answer').innerText = questions[id].a[1].text;
+    }
+    else if (questions[id].a[2].isCorrect === true){
+        document.getElementById('correct-answer').innerText = questions[id].a[2].text;
+    }
+    else if (questions[id].a[3].isCorrect === true){
+        document.getElementById('correct-answer').innerText = questions[id].a[3].text;
+    }
+    else{
+        alert('error');
     }
 };
 //document load
