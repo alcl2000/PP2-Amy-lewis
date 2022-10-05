@@ -106,7 +106,12 @@ img{
     background-color: var(--alice-blue);
     border: solid 2px var(--yellow-green-color-wheel);
     max-width: 80%;
-    margin: auto;
+    margin: auto; 
+}
+#correct-answer{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    border-bottom: 1px solid var(--yellow-green-color-wheel);
 }
 /*Results page*/
 #title , #result-text{
