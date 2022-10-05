@@ -4,13 +4,13 @@ const questions = [
    a: [ {text : "Jeff", isCorrect : true},
        { text: "Mike", isCorrect : false},
        { text: "William", isCorrect : false},
-       { text: "Gregor", isCorrect : true}]
+       { text: "Lazslo", isCorrect : false}]
    },{
     id : 1,
     q : "Which famous murderer does Lazslo claim to be?",
     a : [{ text: "The Zodiac Killer", isCorrect : false},
          {text : "Jeffry Dahmer", isCorrect: false},
-        {text: "Jack the Ripper", isCorrect:true},
+        {text: "Jack the Ripper", isCorrect: 'true'},
         {text : "The Golden State Killer", isCorrect: false}]
    },
     {id : 2,
@@ -61,19 +61,19 @@ const questions = [
     a :[{text:"Ahmed", isCorrect:false},
      {text:"Nasrin", isCorrect: false},
      {text:"Marwa", isCorrect: true},
-     {text:"Kublai", isCorrect:false}]},
+     {text:"Kublai", isCorrect: false}]},
     {id : 10,
     q: "Who helps with Baby Colin's private school application?",
-    a :[{text:"The neighbour, Sean ", isCorrect:true},
-        {text:"The Pope", isCorrect:false},
-        {text:"The Baron", isCorrect:false},
+    a :[{text:"The neighbour, Sean ", isCorrect: true},
+        {text:"The Pope", isCorrect: false},
+        {text:"The Baron", isCorrect: false},
         {text:"The sound guy, Kevin", isCorrect: false }]},
     {id : 11,
     q: "Bran Daltry is the alter ego of which vampire ",
     a: [{text:"Elvis", isCorrect: false},
-        {text:"Ritchie Suck", isCorrect:false},
-        {text:"Simon the Devious", isCorrect:true},
-        {text:"Count Rapula", isCorrect:false}]}]
+        {text:"Ritchie Suck", isCorrect: false},
+        {text:"Simon the Devious", isCorrect: true},
+        {text:"Count Rapula", isCorrect: false}]}]
 
 
 //assignments 
@@ -88,7 +88,7 @@ var op3 = document.getElementById('option-3');
 var op4 = document.getElementById('option-4');
 let options = document.getElementsByClassName('answer');
 localStorage.setItem('score', "");
-let correctArea = document.getElementsByClassName('correct');
+let correctArea = document.getElementById('correct-zone');
 let correctAnswer = document.getElementById('correct-answer');
 
 
@@ -115,6 +115,7 @@ function displayQuestion(id){
     order.value = id;
     scoreBox.innerText = score;
     localStorage.score = score;
+    correctArea.style.display = 'none';
 };
 /**
  * Checks the value of isCorrect in in the buttons.
@@ -122,20 +123,16 @@ function displayQuestion(id){
  * If isCorrect is false it displays the correct answer and changes the button colour.
  */
 function checkAnswer(selected){
-// prevent the buttons being re-pressed
-    
-//read the value of the button pressed; 
-    if (selected == 'true'){
+    if (selected === 'true'){
        scoreBox.innerText = ++score;
        alert('correct');
        nextQuestion();
     }
     else{
         alert('incorrect');
-        displayCorrect(id);
-        option.removeEventListener('click', loadAnalysis());
-    }
-};
+        correctArea.style.display = 'block';
+        }
+    };
 /**
  * Starts a new question loop.
  * Changes the id so that the correct questions are displayed.
@@ -149,16 +146,6 @@ function nextQuestion(){
     else{
     id < questions.length ? displayQuestion(++id): endQuiz(score);
     }
-    console.log(id)
-};
-/**
- * This function checks the correct answer and displays it in the event that a user enters the incorrect answer.
- * Iterates through the questions and answer responses to check the correct answer
- * Displays or hides the correct answer area for the user
- */
-function displayCorrect(id){   
-    correctAnswer.innerHTML = corrected;
-    
 };
 /**
  * Takes the user's score and transfers it through local data to the results page
@@ -169,14 +156,11 @@ function endQuiz(score){
    let finalScore = document.getElementById('final-score');
    finalScore.innerText = score;
 };
-
 //document load
-document.getElementById('next-question').addEventListener('click',function(){nextQuestion()});
 document.addEventListener('onLoad', displayQuestion(id));
+document.getElementById('next-question').addEventListener('click',function(){nextQuestion()});
 for (let option of options){
-     option.addEventListener('click', function loadAnalysis(){
-        let selected = option.value;
-        checkAnswer(selected);
-    });
+    let selected = option.value
+    option.addEventListener('click', function(){checkAnswer(selected)});
 };
 
