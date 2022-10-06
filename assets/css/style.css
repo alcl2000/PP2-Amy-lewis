@@ -70,7 +70,7 @@ p{
 /*Index*/
 img{
     max-width: 250px;
-    margin: 1.5rem;
+    margin: 25px 18px;
 }
 /*Quiz*/
 #question-box, #score-area{
@@ -140,6 +140,9 @@ h2{
 }
 /**Media Query - 400px */
 @media screen and (min-width: 400px) {
+    img{
+        margin-left: 25%;
+    }
     #question-box , #score-area{
         position: absolute;
         top: 50.75px;
@@ -154,12 +157,26 @@ h2{
         margin-top: 50px;
     }
 }
-/** Media Query - 900px*/
+/*Media Query - 900px*/
 @media only screen and (min-width: 900px){
+    /*Index*/
+    img{
+        margin-left: 35%;
+    }
+    /*Quiz page*/
     #question-box{
         top: 8%;
     }
     #score-area{
         top: 8%;
+    }
+}
+/** Media Query - 1400px*/
+@media only screen and (min-width:1400px){
+    img{
+        margin-left: 40%;
+    }
+    #question-box , #score-area{
+        top:12%;
     }
 }
