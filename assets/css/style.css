@@ -107,6 +107,7 @@ img{
     border: solid 2px var(--yellow-green-color-wheel);
     max-width: 80%;
     margin: auto; 
+    text-align: center;
 }
 #correct-answer{
     font-family: 'Roboto', sans-serif;
