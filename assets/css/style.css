@@ -73,6 +73,18 @@ img{
     margin: 1.5rem;
 }
 /*Quiz*/
+#question-box, #score-area{
+    max-width: fit-content;
+    border: 1px solid var(--outer-space-crayola);
+    background-color: var(--alice-blue);
+}
+#number, #score{
+    font-family: 'PT Serif', serif;
+    color: var(--barbie-pink);
+}
+#question-box, #score-area{
+    margin: 10px auto;
+}
 #game-area{
     background: var(--light-periwinkle);
     border: 2px solid var(--dark-violet);
@@ -125,4 +137,29 @@ img{
 h2{
     font-family: 'PT Serif', serif;
     text-align: center;
+}
+/**Media Query - 400px */
+@media screen and (min-width: 400px) {
+    #question-box , #score-area{
+        position: absolute;
+        top: 50.75px;
+    }
+    #question-box {
+        left:15%;
+    }
+    #score-area{
+        right:15%;
+    }
+    #question{
+        margin-top: 50px;
+    }
+}
+/** Media Query - 900px*/
+@media only screen and (min-width: 900px){
+    #question-box{
+        top: 8%;
+    }
+    #score-area{
+        top: 8%;
+    }
 }
