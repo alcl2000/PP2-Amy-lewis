@@ -10,7 +10,7 @@ const questions = [
     q : "Which famous murderer does Lazslo claim to be?",
     a : [{ text: "The Zodiac Killer", isCorrect : false},
          {text : "Jeffry Dahmer", isCorrect: false},
-        {text: "Jack the Ripper", isCorrect: 'true'},
+        {text: "Jack the Ripper", isCorrect: true},
         {text : "The Golden State Killer", isCorrect: false}]
    },
     {id : 2,
@@ -22,55 +22,55 @@ const questions = [
     },
     {id: 3,
     q : "What form does Nadja's ghost inhabit?",
-    a: [{text: "A Doll", isCorrect : true},
+    a : [{text: "A Doll", isCorrect : true},
         { text : "A Robot", isCorrect : false},
         {text : "A Horse", isCorrect : false},
         {text : "A Computer", isCorrect : false}]},
-    {id: 4 ,
-    q: "What item of cursed clothing does Lazslo own?",
-    a: [{text : "A Belt", isCorrect : false},
+    {id : 4 ,
+    q : "What item of cursed clothing does Lazslo own?",
+    a : [{text : "A Belt", isCorrect : false},
         {text : "An Odd Sock", isCorrect : false},
         {text : "A Hat", isCorrect : true},
         {text : "A Tie", isCorrect : false}]},
-    {id: 5 ,
-    q: "Which one of These Songs do Lazslo and Nadja claim to have written?",
-    a: [{text : "Kokomo", isCorrect : true},
+    {id : 5 ,
+    q : "Which one of These Songs do Lazslo and Nadja claim to have written?",
+    a : [{text : "Kokomo", isCorrect : true},
         {text : "Wouldn't it be nice", isCorrect : false},
         {text : "Surfin' USA", isCorrect : false},
         {text : "Good Vibrations", isCorrect : false}]},
-    {id:  6,
-    q: "What is the name of the werewolf Nandor falls in love with?",
-    a: [{text : "Grace", isCorrect : false},
+    {id :  6,
+    q : "What is the name of the werewolf Nandor falls in love with?",
+    a : [{text : "Grace", isCorrect : false},
         {text : "Gwendoline", isCorrect : false},
         {text : "Gertrude", isCorrect : false},
         {text : "Gail", isCorrect : true}]},
-    {id: 7 ,
-    q: "Who is Nandor's favourite 'The Big Bang Theory' character?",
-    a: [{text : "Sheldon", isCorrect : true},
+    {id : 7 ,
+    q : "Who is Nandor's favourite 'The Big Bang Theory' character?",
+    a : [{text : "Sheldon", isCorrect : true},
         {text : "Penny", isCorrect : false},
         {text : "Leonard", isCorrect : false},
         {text : "Raj", isCorrect : false}]},
     {id : 8,
-    q: "What city do Nadja and Guillermo move to?",
+    q : "What city do Nadja and Guillermo move to?",
     a :[{text:"Ontario ", isCorrect: false},
         {text:"Mexico City", isCorrect: false},
         {text:"Sacramento", isCorrect:false},
         {text:"London", isCorrect: true}]},
     {id : 9,
-    q: "Which of Nandor's wives does he decide to remarry?",
-    a :[{text:"Ahmed", isCorrect:false},
+    q : "Which of Nandor's wives does he decide to remarry?",
+    a : [{text:"Ahmed", isCorrect:false},
      {text:"Nasrin", isCorrect: false},
      {text:"Marwa", isCorrect: true},
      {text:"Kublai", isCorrect: false}]},
     {id : 10,
-    q: "Who helps with Baby Colin's private school application?",
-    a :[{text:"The neighbour, Sean ", isCorrect: true},
+    q : "Who helps with Baby Colin's private school application?",
+    a : [{text:"The neighbour, Sean ", isCorrect: true},
         {text:"The Pope", isCorrect: false},
         {text:"The Baron", isCorrect: false},
         {text:"The sound guy, Kevin", isCorrect: false }]},
     {id : 11,
-    q: "Bran Daltry is the alter ego of which vampire ",
-    a: [{text:"Elvis", isCorrect: false},
+    q : "Bran Daltry is the alter ego of which vampire? ",
+    a : [{text:"Elvis", isCorrect: false},
         {text:"Ritchie Suck", isCorrect: false},
         {text:"Simon the Devious", isCorrect: true},
         {text:"Count Rapula", isCorrect: false}]}]
@@ -122,16 +122,18 @@ function displayQuestion(id){
  * If isCorrect is true, it adds to the score and changes the button colour.
  * If isCorrect is false it displays the correct answer and changes the button colour.
  */
-function checkAnswer(selected){
-    if (selected === 'true'){
+function checkAnswer(event){
+    console.log(event.target)
+    selected = event.target.value;
+    if (selected === 'true' || selected == 'true'){
        scoreBox.innerText = ++score;
        alert('correct');
-       nextQuestion();
+       nextQuestion(id);
     }
     else{
         correctArea.style.display = 'block';
         alert('incorrect');
-        displayCorrect();
+        displayCorrect(id);
         }
     };
 /**
@@ -160,8 +162,7 @@ function endQuiz(score){
 /**
  *This function checks the id currently being displayed, and then checks all possible answers in the object to then display the correct answer in a box.
  */
-function displayCorrect(){
-    let id = --order.value
+function displayCorrect(id){
     if (questions[id].a[0].isCorrect === true){
     document.getElementById('correct-answer').innerText = questions[id].a[0].text;
     }
@@ -176,13 +177,14 @@ function displayCorrect(){
     }
     else{
         alert('error');
-    }
-};
+    };
+}
 //document load
 document.addEventListener('onLoad', displayQuestion(id));
 document.getElementById('next-question').addEventListener('click',function(){nextQuestion()});
 for (let option of options){
-    let selected = option.value
-    option.addEventListener('click', function(){checkAnswer(selected)});
+    let selected = option.value;
+    let aa = option.innerText;
+    option.addEventListener('click', checkAnswer);
 };
 
