@@ -72,6 +72,9 @@ img{
     max-width: 250px;
     margin: 25px 18px;
 }
+#enter>button{
+    margin:  2% 40% 5%;
+}
 /*Quiz*/
 #question-box, #score-area{
     max-width: fit-content;
