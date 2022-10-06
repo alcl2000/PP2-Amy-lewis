@@ -146,6 +146,7 @@ h2{
     img{
         margin-left: 25%;
     }
+    /*Questions page*/
     #question-box , #score-area{
         position: absolute;
         top: 50.75px;
@@ -158,6 +159,16 @@ h2{
     }
     #question{
         margin-top: 50px;
+    }
+}
+/*Media Query - 500 px */
+@media only screen and (min-width: 500px){
+    /*Results page*/
+    #buttons{
+        margin-left: 15%;
+    }
+    #buttons>button{
+        margin: 16px 30px 16px 40px;
     }
 }
 /*Media Query - 900px*/
@@ -173,6 +184,10 @@ h2{
     #score-area{
         top: 8%;
     }
+    /*Results page*/
+    #buttons{
+        margin-left: 25%;
+    }
 }
 /** Media Query - 1400px*/
 @media only screen and (min-width:1400px){
@@ -181,5 +196,9 @@ h2{
     }
     #question-box , #score-area{
         top:12%;
+    }
+    /*Results page*/
+    #buttons{
+        margin-left: 35%;
     }
 }
