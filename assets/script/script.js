@@ -183,8 +183,6 @@ function displayCorrect(id){
 document.addEventListener('onLoad', displayQuestion(id));
 document.getElementById('next-question').addEventListener('click',function(){nextQuestion()});
 for (let option of options){
-    let selected = option.value;
-    let aa = option.innerText;
     option.addEventListener('click', checkAnswer);
 };
 
