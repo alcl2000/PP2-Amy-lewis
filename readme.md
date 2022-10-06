@@ -43,6 +43,7 @@ The next question button was supposed to call the nextQuestion function and iter
 ### Validators
 ---
 ## Deployment
+This project was deployed using GitHub pages through this link: [Live page](https://alcl2000.github.io/PP2-Amy-lewis/). The repository is available on GitHub and is available for users to clone and fork [Link to repository here](https://github.com/alcl2000/PP2-Amy-lewis)
 ---
 ## Credits 
 ### Technology used
