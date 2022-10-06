@@ -116,14 +116,16 @@ function displayQuestion(id){
     scoreBox.innerText = score;
     localStorage.score = score;
     correctArea.style.display = 'none';
-};
+    for (let option of options){
+        option.addEventListener('click', checkAnswer);
+    }; 
+}
 /**
  * Checks the value of isCorrect in in the buttons.
  * If isCorrect is true, it adds to the score and changes the button colour.
  * If isCorrect is false it displays the correct answer and changes the button colour.
  */
 function checkAnswer(event){
-    console.log(event.target)
     selected = event.target.value;
     if (selected === 'true' || selected == 'true'){
        scoreBox.innerText = ++score;
@@ -147,7 +149,7 @@ function nextQuestion(){
         displayQuestion(++id);
     }
     else{
-    id < questions.length ? displayQuestion(++id): endQuiz(score);
+        id < questions.length ? displayQuestion(++id): endQuiz(score);
     }
 };
 /**
@@ -163,6 +165,10 @@ function endQuiz(score){
  *This function checks the id currently being displayed, and then checks all possible answers in the object to then display the correct answer in a box.
  */
 function displayCorrect(id){
+    op1.removeEventListener('click', checkAnswer);
+    op2.removeEventListener('click',checkAnswer);
+    op3.removeEventListener('click', checkAnswer);
+    op4.removeEventListener('click',checkAnswer);
     if (questions[id].a[0].isCorrect === true){
     document.getElementById('correct-answer').innerText = questions[id].a[0].text;
     }
@@ -178,11 +184,10 @@ function displayCorrect(id){
     else{
         alert('error');
     };
+    for(let option of options){
+        options.removeEventListener('click', checkAnswer);
+    };
 }
 //document load
 document.addEventListener('onLoad', displayQuestion(id));
-document.getElementById('next-question').addEventListener('click',function(){nextQuestion()});
-for (let option of options){
-    option.addEventListener('click', checkAnswer);
-};
-
+document.getElementById('next-question').addEventListener('click', nextQuestion );
