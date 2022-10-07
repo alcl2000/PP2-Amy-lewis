@@ -1,8 +1,10 @@
 # 'What We Do in the Shadows' Quiz
 ---
-1. [Wireframes]()
-2. [Features]()
-3. [Credits]()
+1. [Wireframes](##%20Wireframes)
+2. [Features](##%20Features)
+3. [Bugs](##%20Bugs)
+4. [Testing](##%20Testing)
+4. [Credits](##%20Credits)
 
 ---
 ## Wireframes
@@ -57,3 +59,5 @@ This project is built using HTML, CSS and JavaScript only
 - [Grenze Gotisch](https://fonts.google.com/specimen/Grenze+Gotisch)
 #### Tutorials
 [JS quiz tutorial](https://www.geeksforgeeks.org/how-to-create-a-simple-javascript-quiz/)
+### With thanks
+Thanks to my mentor, Sammy, Ed from tutor support and the 'What We Do In The Shadows' discord for help with ideas, testing, and JavaScript wrangling
