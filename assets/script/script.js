@@ -129,12 +129,12 @@ function checkAnswer(event){
     selected = event.target.value;
     if (selected === 'true' || selected == 'true'){
        scoreBox.innerText = ++score;
-       swal('Correct','' ,'success',{closeOnClickOutside: true});
+       swal('Correct', '', '',{closeOnClickOutside: true});
        nextQuestion(id);
     }
     else{
         correctArea.style.display = 'block';
-        swal('Incorrect','', 'error',{closeOnClickOutside: true});
+        swal('Incorrect','', '',{closeOnClickOutside: true});
         displayCorrect(id);
         }
     };
