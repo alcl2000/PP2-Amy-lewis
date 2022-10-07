@@ -52,6 +52,7 @@ This project was deployed using GitHub pages through this link: [Live page](http
 This project is built using HTML, CSS and JavaScript only
 ### Assets
 - Logo from [PNG Repo](https://www.pngrepo.com/svg/200392/fangs-vampire)
+- JS Alert Framework from [Sweet Alert](https://sweetalert.js.org/)
 ### Other content
 #### Google Fonts used
 - [PT Serif](https://fonts.google.com/?query=ParaType&category=Serif,Monospace&preview.text=Question%201:&preview.text_type=custom)
