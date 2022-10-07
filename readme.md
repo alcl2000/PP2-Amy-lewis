@@ -1,12 +1,22 @@
 # 'What We Do in the Shadows' Quiz
 ---
+. [Design Choices](##%20Design%20Choices)
 1. [Wireframes](##%20Wireframes)
 2. [Features](##%20Features)
 3. [Bugs](##%20Bugs)
 4. [Testing](##%20Testing)
-4. [Credits](##%20Credits)
+5. [Credits](##%20Credits)
 
 ---
+## User Stories
+---
+## Design Choices
+### Colour selection
+The colours for this website were picked from various promotional materials for the show
+![An image showing the promotional posters for 'What We Do in the Shadows' with some colours picked out](assets/images/readme/colour-picker.jpg)
+I then picked out similar and complimentary colours to match the ones picked from these posters
+![A colour palette showing various shades of pinks, purples and greens picked from the promotional images](assets/images/readme/picked-out-colors.jpg)
+Not all of these colours were used in the final project, but having them available while developing allowed me to consider mulitple options for each element
 ## Wireframes
 ### Site Map
 ![A site map showing the progression from page to page](assets/images/readme/readme-wireframe.jpg)
@@ -27,7 +37,8 @@ The quiz page Features the main quiz loop for the players. It displays the quiz 
 It also shows a quiz score for the player. 
 When a question is answered the quiz page will either confirm the user got the question correct or show them the correct answer if they got the answer wrong.
 ### Buttons
-The buttons display the correct answer sets for each question
+The buttons display the correct answer sets for each question 
+- Incorrect initial user input does not allow for re-selection when correct answer is displayed
 ### Results Page
 The results page displays the user's final score at the end of the quiz, along with a short paragraph describing their results.
 
@@ -42,6 +53,7 @@ The next question button was supposed to call the nextQuestion function and iter
 ---
 ## Testing
 ### Manual
+All internal links within the project work. All external links are valid. There are no errors in the console during use.
 ### Validators
 ---
 ## Deployment
