@@ -54,6 +54,7 @@ header{
     font-size: 2em;
     text-align: center;
 }
+/*Index*/
 p{
     color: var(--outer-space-crayola);
     font-family: 'Roboto Condensed', sans-serif;
@@ -67,7 +68,6 @@ p{
    margin-top: 2rem;
    margin-bottom: 2rem;
 }
-/*Index*/
 img{
     max-width: 250px;
     margin: 25px 18px;
