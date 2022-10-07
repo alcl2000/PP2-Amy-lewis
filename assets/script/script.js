@@ -122,8 +122,8 @@ function displayQuestion(id){
 }
 /**
  * Checks the value of isCorrect in in the buttons.
- * If isCorrect is true, it adds to the score and changes the button colour.
- * If isCorrect is false it displays the correct answer and changes the button colour.
+ * If isCorrect is true, it adds to the score and iterates to the next question.
+ * If isCorrect is false it displays the correct answer and calls 'displayCorrect'.
  */
 function checkAnswer(event){
     selected = event.target.value;
@@ -165,12 +165,14 @@ function endQuiz(score){
  *This function checks the id currently being displayed, and then checks all possible answers in the object to then display the correct answer in a box.
  */
 function displayCorrect(id){
+    //For loop used to add event listeners, for loop does not work to remove 
     op1.removeEventListener('click', checkAnswer);
     op2.removeEventListener('click',checkAnswer);
     op3.removeEventListener('click', checkAnswer);
     op4.removeEventListener('click',checkAnswer);
+    //
     if (questions[id].a[0].isCorrect === true){
-    document.getElementById('correct-answer').innerText = questions[id].a[0].text;
+        document.getElementById('correct-answer').innerText = questions[id].a[0].text;
     }
     else if (questions[id].a[1].isCorrect === true){
         document.getElementById('correct-answer').innerText = questions[id].a[1].text;
@@ -182,10 +184,7 @@ function displayCorrect(id){
         document.getElementById('correct-answer').innerText = questions[id].a[3].text;
     }
     else{
-        alert('error');
-    };
-    for(let option of options){
-        options.removeEventListener('click', checkAnswer);
+        swal('Error','' , 'error');
     };
 }
 //document load
