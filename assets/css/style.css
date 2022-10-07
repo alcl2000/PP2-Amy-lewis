@@ -47,6 +47,19 @@ button{
 button:hover{
     background-color: var(--dark-white);
 }
+/*SWAL*/
+.swal-overlay {
+    background-color: rgba(195, 162, 207, 0.45);
+  }
+.swal-button{
+    background-color: var(--alice-blue);
+    color: var(--barbie-pink);
+    font-family: 'PT Serif', serif;
+}
+.swal-title{
+    color: var(--barbie-pink);
+    font-family:'Grenze Gotisch', cursive;
+}
 /*header*/
 header{
     background-color: var(--light-periwinkle);
