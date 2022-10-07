@@ -129,12 +129,12 @@ function checkAnswer(event){
     selected = event.target.value;
     if (selected === 'true' || selected == 'true'){
        scoreBox.innerText = ++score;
-       swal('Correct','' ,'success');
+       swal('Correct','' ,'success',{closeOnClickOutside: true});
        nextQuestion(id);
     }
     else{
         correctArea.style.display = 'block';
-        swal('Incorrect','', 'error');
+        swal('Incorrect','', 'error',{closeOnClickOutside: true});
         displayCorrect(id);
         }
     };
@@ -184,7 +184,7 @@ function displayCorrect(id){
         document.getElementById('correct-answer').innerText = questions[id].a[3].text;
     }
     else{
-        swal('Error','' , 'error');
+        swal('Error','' , 'error',{closeOnClickOutside: true});
     };
 }
 //document load
