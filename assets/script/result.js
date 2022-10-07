@@ -20,7 +20,6 @@ let finalScore = document.getElementById('final-score');
 let scoreTotal = JSON.parse(localStorage.getItem('score'));
 
 finalScore.innerText = scoreTotal;
-score = finalScore.innerHTML;
 /**
  * Checks the score the user and assigns them a value based on their score 
  */
@@ -44,4 +43,4 @@ function assignResult(scoreTotal){
 
 }
 //document load
-document.addEventListener('onLoad', assignResult(score));
+document.addEventListener('onLoad', assignResult(scoreTotal));
