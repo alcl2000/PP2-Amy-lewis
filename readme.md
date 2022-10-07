@@ -1,4 +1,9 @@
-# 'What We Do in the Shadows' Quiz
+# 'What We do in The Shadows' Quiz
+
+![An 'Am I Responsive' mockup showing a website with a logo showing large vampire teeth](assets/images/readme/am-i-responsive.jpg)
+
+'What We do in The Shadows is an New Zealand/American Horror comedy film and TV show. It recently aired its 4th season in the United States and has gathered a large online following
+This Quiz was designed for fans to test their knowledge of the show and to have fun sharing their scores.
 ---
 . [Design Choices](##%20Design%20Choices)
 1. [Wireframes](##%20Wireframes)
@@ -12,34 +17,45 @@
 ---
 ## Design Choices
 ### Colour selection
+
 The colours for this website were picked from various promotional materials for the show
 ![An image showing the promotional posters for 'What We Do in the Shadows' with some colours picked out](assets/images/readme/colour-picker.jpg)
 I then picked out similar and complimentary colours to match the ones picked from these posters
 ![A colour palette showing various shades of pinks, purples and greens picked from the promotional images](assets/images/readme/picked-out-colors.jpg)
 Not all of these colours were used in the final project, but having them available while developing allowed me to consider mulitple options for each element
+
 ## Wireframes
 ### Site Map
+
 ![A site map showing the progression from page to page](assets/images/readme/readme-wireframe.jpg)
 ### Index Page
+
 ![A Wireframe of the index page displaying the title, instructions and a button to start the quiz ](assets/images/readme/readme-index.jpg)
-### Quiz Page 
+### Quiz Page
+
 ![A Wireframe of the quiz page showing the quiz question, the question number and score number, along with the answer buttons](assets/images/readme/readme-quiz.jpg)
 ### Results page
+
 ![A Wireframe of the results page showing the final score, and a short paragraph detailing their results](assets/images/readme/readme-result.jpg)
 ---
 ## Features
 ### Header
+
 The header is present on every page. It has the home home button along with a link to my Git hub and linked in available on each page.
 ### Index Page
+
 The index page features the title of the quiz, along with a short description of the rules. There is also a button to access the quiz. 
 ### Quiz page
+
 The quiz page Features the main quiz loop for the players. It displays the quiz title and number. 
 It also shows a quiz score for the player. 
 When a question is answered the quiz page will either confirm the user got the question correct or show them the correct answer if they got the answer wrong.
 ### Buttons
+
 The buttons display the correct answer sets for each question 
 - Incorrect initial user input does not allow for re-selection when correct answer is displayed
 ### Results Page
+
 The results page displays the user's final score at the end of the quiz, along with a short paragraph describing their results.
 
 ---
