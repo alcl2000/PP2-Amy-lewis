@@ -149,7 +149,16 @@ function nextQuestion(){
         displayQuestion(++id);
     }
     else{
-        id < questions.length ? displayQuestion(++id): endQuiz(score);
+        if(id < 10){
+            displayQuestion(++id);
+        }
+        else if( id >= questions.length){
+            endQuiz(score);
+        }
+        else{
+            endQuiz(score);
+        }
+
     }
 };
 /**
