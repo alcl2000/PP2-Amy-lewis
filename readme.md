@@ -12,7 +12,7 @@ This Quiz was designed for fans to test their knowledge of the show and to have 
 - [User Experience](#user-experience)
 - [Design Choices](#design-choices)
     -[Colour Selection](#colour-selection)
-    -[Typography](#)
+    -[Typography](#typography)
 - [Wireframes](#wireframes)
 - [Features](#features)
 - [Bugs](#bugs)
@@ -78,6 +78,10 @@ The secondary font was used to differentiate from the main body font, while bein
 The final font was picked for its clean appearance and legibility
 
 ![Roboto Condensed, a sans-serif font](assets/images/readme/roboto-condensed-font.jpg)
+
+### Logo Selection 
+
+The logo for this website was picked from [PNG Repo](https://www.pngrepo.com/svg/200392/fangs-vampire). It is a simple logo that clearly displays what the show is about. The logo was then re-used for the favicon to provide clear identification amongst browser tabs.
 
 ## Wireframes
 
