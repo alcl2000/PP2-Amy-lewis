@@ -38,11 +38,23 @@ To celebrate, this quiz was created to increase fan engagement between seasons a
 
 ### Client Goals
 
+- I want users to be able to take a quiz based on a popular show
+- I want users to get a fun result based on their score and be able to share this score with others
+
 ### Intital user Goals
+
+- I want to know how the quiz works
+- I want to know what content will be in the quiz
+- To have a wide range of questions to answer
+
+## Returning user goals
+
+- I want to be able to compare my score to my previous score
 
 
 ---
 ## Design Choices
+
 ### Colour selection
 
 The colours for this website were picked from various promotional materials for the show
@@ -50,6 +62,22 @@ The colours for this website were picked from various promotional materials for 
 I then picked out similar and complimentary colours to match the ones picked from these posters
 ![A colour palette showing various shades of pinks, purples and greens picked from the promotional images](assets/images/readme/picked-out-colors.jpg)
 Not all of these colours were used in the final project, but having them available while developing allowed me to consider mulitple options for each element
+
+### Typography
+
+I used three different fonts throughout the site.
+
+The main title font used was picked for its resemblance to the font used in the title of 'What We Do in the Shadows'
+
+![Grenze Gotisch font, a serif font with a gothic flair](assets/images/readme/grenze-gotisch-font.jpg)
+
+The secondary font was used to differentiate from the main body font, while being more legible than the title font, allowing for easier reading in the questions
+
+![PT Serif, a serif font](assets/images/readme/pt-serif-font.jpg)
+
+The final font was picked for its clean appearance and legibility
+
+![Roboto Condensed, a sans-serif font](assets/images/readme/roboto-condensed-font.jpg)
 
 ## Wireframes
 
@@ -69,6 +97,7 @@ The index page welcomes the users to the site, provides them an explaination on 
 ### Results page
 
 ![A Wireframe of the results page showing the final score, and a short paragraph detailing their results](assets/images/readme/readme-result.jpg)
+
 ---
 ## Features
 ### Header
