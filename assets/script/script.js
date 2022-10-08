@@ -73,7 +73,7 @@ const questions = [
     a : [{text:"Elvis", isCorrect: false},
         {text:"Ritchie Suck", isCorrect: false},
         {text:"Simon the Devious", isCorrect: true},
-        {text:"Count Rapula", isCorrect: false}]}]
+        {text:"Count Rapula", isCorrect: false}]}];
 
 
 //assignments
@@ -118,7 +118,7 @@ function displayQuestion(id){
     correctArea.style.display = 'none';
     for (let option of options){
         option.addEventListener('click', checkAnswer);
-    }; 
+    } 
 }
 /**
  * Checks the value of isCorrect in in the buttons.
@@ -126,7 +126,7 @@ function displayQuestion(id){
  * If isCorrect is false it displays the correct answer and calls 'displayCorrect'.
  */
 function checkAnswer(event){
-    selected = event.target.value;
+    let selected = event.target.value;
     if (selected === 'true' || selected == 'true'){
        scoreBox.innerText = ++score;
        swal('Correct', '', '',{closeOnClickOutside: true});
@@ -137,28 +137,28 @@ function checkAnswer(event){
         swal('Incorrect','', '',{closeOnClickOutside: true});
         displayCorrect(id);
         }
-    };
+    }
 /**
  * Starts a new question loop.
  * Changes the id so that the correct questions are displayed.
  */
 function nextQuestion(){
     //if the id is higher than the length of the array, add one to the id, otherwise end quiz
-    score = scoreBox.innerText
+    score = scoreBox.innerText;
     if (id === 0){
         displayQuestion(++id);
     }
     else{
         id < 11 ? displayQuestion(++id) : endQuiz(score);
     }
-};
+}
 /**
  * Takes the user's score and transfers it through local data to the results page
  */
 function endQuiz(score){
    window.location.replace('results.html');
    localStorage.getItem('score');
-};
+}
 /**
  *This function checks the id currently being displayed, and then checks all possible answers in the object to then display the correct answer in a box.
  */

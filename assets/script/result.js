@@ -11,7 +11,7 @@ const results =[
     {i : 3,
     title : "Vampiric Council Member",
     text : "Perfect score! You'll be called before the council to organise the next party very soon!"}
-]
+];
 
 //global
 let resultTitle = document.getElementById('result-title');
