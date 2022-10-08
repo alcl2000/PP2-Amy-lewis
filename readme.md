@@ -14,6 +14,19 @@ This Quiz was designed for fans to test their knowledge of the show and to have 
 
 ---
 ## User Stories
+
+### Initial discussion
+
+The fourth season of 'What We Do in the Shadows'  finished airing in the United States and Canada in September, and will soon be aired around the world. The show's fanbase continues to grow, and the show has been renewed for a fifth and sixth season. 
+
+To celebrate, this quiz was created to increase fan engagement between seasons and international airing.
+
+### Key Information on the Site
+
+- How the quiz works
+- Which seasons the questions are about
+- How many questions there are
+- 
 ---
 ## Design Choices
 ### Colour selection
@@ -76,8 +89,22 @@ All internal links within the project work. All external links are valid. There 
 This project was deployed using GitHub pages through this link: [Live page](https://alcl2000.github.io/PP2-Amy-lewis/). The repository is available on GitHub and is available for users to clone and fork [Link to repository here](https://github.com/alcl2000/PP2-Amy-lewis)
 ---
 ## Credits 
-### Technology used
+### Languages used
 This project is built using HTML, CSS and JavaScript only
+
+### Frameworks, Programs and Libraries
+
+- Balsamiq - Wireframes 
+- Git - Version Control
+- Git Hub - Repository hosting
+- Git Hub - Pages web page hosting 
+- Sweet Alert - Custom JS alerts
+- Favicon.io - Page favicon
+- Google Fonts - Fonts used throughout
+- Font Awesome - Social media icons
+- Am I responsive - Mockup 
+- [Coolors.co](https://coolors.co/) - To generate and edit the colour palette used on the site
+
 ### Assets
 - Logo from [PNG Repo](https://www.pngrepo.com/svg/200392/fangs-vampire)
 - JS Alert Framework from [Sweet Alert](https://sweetalert.js.org/)
