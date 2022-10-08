@@ -4,16 +4,23 @@
 
 'What We do in The Shadows is an New Zealand/American Horror comedy film and TV show. It recently aired its 4th season in the United States and has gathered a large online following
 This Quiz was designed for fans to test their knowledge of the show and to have fun sharing their scores.
----
-. [Design Choices](##%20Design%20Choices)
-1. [Wireframes](##%20Wireframes)
-2. [Features](##%20Features)
-3. [Bugs](##%20Bugs)
-4. [Testing](##%20Testing)
-5. [Credits](##%20Credits)
 
 ---
-## User Stories
+
+## Contents
+
+- [User Experience](#user-experience)
+- [Design Choices](#design-choices)
+    -[Colour Selection](#colour-selection)
+    -[Typography](#)
+- [Wireframes](#wireframes)
+- [Features](#features)
+- [Bugs](#bugs)
+- [Testing](#testing)
+- [Credits](#credits)
+
+---
+## User Experience
 
 ### Initial discussion
 
@@ -26,7 +33,14 @@ To celebrate, this quiz was created to increase fan engagement between seasons a
 - How the quiz works
 - Which seasons the questions are about
 - How many questions there are
-- 
+
+## User Stories
+
+### Client Goals
+
+### Intital user Goals
+
+
 ---
 ## Design Choices
 ### Colour selection
@@ -38,12 +52,17 @@ I then picked out similar and complimentary colours to match the ones picked fro
 Not all of these colours were used in the final project, but having them available while developing allowed me to consider mulitple options for each element
 
 ## Wireframes
+
 ### Site Map
 
 ![A site map showing the progression from page to page](assets/images/readme/readme-wireframe.jpg)
+
 ### Index Page
 
+The index page welcomes the users to the site, provides them an explaination on how the site and quiz work and what the questions are about
+
 ![A Wireframe of the index page displaying the title, instructions and a button to start the quiz ](assets/images/readme/readme-index.jpg)
+
 ### Quiz Page
 
 ![A Wireframe of the quiz page showing the quiz question, the question number and score number, along with the answer buttons](assets/images/readme/readme-quiz.jpg)
@@ -82,10 +101,13 @@ The next question button was supposed to call the nextQuestion function and iter
 ---
 ## Testing
 ### Manual
+
 All internal links within the project work. All external links are valid. There are no errors in the console during use.
+
 ### Validators
 ---
 ## Deployment
+
 This project was deployed using GitHub pages through this link: [Live page](https://alcl2000.github.io/PP2-Amy-lewis/). The repository is available on GitHub and is available for users to clone and fork [Link to repository here](https://github.com/alcl2000/PP2-Amy-lewis)
 ---
 ## Credits 
