@@ -187,6 +187,8 @@ All internal links within the project work. All external links are valid. There 
 #### JavaScript Validators
 
 - ![script.js](assets/images/readme/quiz.js-jshint.jpg)
+The undefined variable is swal - the sweet alerts library in use on my page, the expresson on line 151 is a nested if statement.
+
 - ![result.js](assets/images/readme/result.js-jshint.jpg)
 ---
 ## Deployment and Local Development
