@@ -149,15 +149,7 @@ function nextQuestion(){
         displayQuestion(++id);
     }
     else{
-        if(id < 11){
-            displayQuestion(++id);
-        }
-        else if( id >= questions.length){
-            endQuiz(score);
-        }
-        else{
-            endQuiz(score);
-        }
+        id < 11 ? displayQuestion(++id) : endQuiz(score);
     }
 };
 /**
