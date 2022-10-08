@@ -89,6 +89,7 @@ All internal links within the project work. All external links are valid. There 
 This project was deployed using GitHub pages through this link: [Live page](https://alcl2000.github.io/PP2-Amy-lewis/). The repository is available on GitHub and is available for users to clone and fork [Link to repository here](https://github.com/alcl2000/PP2-Amy-lewis)
 ---
 ## Credits 
+
 ### Languages used
 This project is built using HTML, CSS and JavaScript only
 
@@ -106,14 +107,21 @@ This project is built using HTML, CSS and JavaScript only
 - [Coolors.co](https://coolors.co/) - To generate and edit the colour palette used on the site
 
 ### Assets
+
 - Logo from [PNG Repo](https://www.pngrepo.com/svg/200392/fangs-vampire)
 - JS Alert Framework from [Sweet Alert](https://sweetalert.js.org/)
+
 ### Other content
+
+All text on this site was written by myself, with the rights of 'What We Do in the Shadows' belonging to the FX network and the other copyright holders
+
 #### Google Fonts used
 - [PT Serif](https://fonts.google.com/?query=ParaType&category=Serif,Monospace&preview.text=Question%201:&preview.text_type=custom)
 - [Roboto Condensed](https://fonts.google.com/specimen/Roboto+Condensed?query=roboto&category=Serif,Sans+Serif,Display,Monospace&preview.text=Question%201:&preview.text_type=custom)
 - [Grenze Gotisch](https://fonts.google.com/specimen/Grenze+Gotisch)
 #### Tutorials
+
 [JS quiz tutorial](https://www.geeksforgeeks.org/how-to-create-a-simple-javascript-quiz/)
 ### With thanks
+
 Thanks to my mentor, Sammy, Ed from tutor support and the 'What We Do In The Shadows' discord for help with ideas, testing, and JavaScript wrangling
