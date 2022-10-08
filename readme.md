@@ -104,6 +104,7 @@ The index page welcomes the users to the site, provides them an explaination on 
 
 ---
 ## Features
+
 ### Header
 
 The header is present on every page. It has the home home button along with a link to my Git hub and linked in available on each page.
@@ -119,6 +120,7 @@ When a question is answered the quiz page will either confirm the user got the q
 
 The buttons display the correct answer sets for each question 
 - Incorrect initial user input does not allow for re-selection when correct answer is displayed
+
 ### Results Page
 
 The results page displays the user's final score at the end of the quiz, along with a short paragraph describing their results.
@@ -139,11 +141,20 @@ Adding an alternate array of questions would increase the chances of return user
 
 ---
 ## Bugs 
+
 ### The Game did not always redirect users after a correct answer input
+
 The first question specifically did not automatically redirect for the user upon entering a correct answer. To solve this I added an if statement to the next question function, which checks if the id = 0. If it does, the next question is called but the id is iterated before that. Otherwise the next question is called as normal.
-### The assign result function was unable to parse the score value 
-### The next question button was not calling the function correctly
-The next question button was supposed to call the nextQuestion function and iterate through the next question. The function was not being called corrrectly, and often was called before the button was clicked. This problem was fixed by passing the function through a proxy function to delay the function being called. 
+
+### 'Questions[id] is undefined'
+
+![A gif showing the quiz page button being clicked up until the last question, which produces an error in the console](assets/images/readme/error-iteration.gif)
+
+Here the error was caused by the id variable, the if statement used to decide iteration used the array length as the upper limit. The code was not automatically ending the iteration loop when the id was equal to the length of the array, and emitting an error when the user either answered or skipped the last question
+
+This was solved by switching from using the array length to the hard coded number 11
+
+![The tenary if statement that asks if the id is less than 11, if so iterate the quiz, if not end the quiz](assets/images/readme/next-question-fix.jpg)
 
 ---
 ## Testing
