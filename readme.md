@@ -123,6 +123,20 @@ The buttons display the correct answer sets for each question
 
 The results page displays the user's final score at the end of the quiz, along with a short paragraph describing their results.
 
+## Features to be added
+
+### Score board 
+
+Adding a leader board would allow users to compare their score, to take the quiz again with the aim of getting a higher score and getting their name on the leader board
+
+### Share Button
+
+Adding a share button, so that users can share their score across social media, would allow for more engagment outside of the intial users, so that more users can become aware of - and take the quiz.
+
+### Alternate questions
+
+Adding an alternate array of questions would increase the chances of return users, and increase the challenge by providing questions that former users do not expect
+
 ---
 ## Bugs 
 ### The Game did not always redirect users after a correct answer input
