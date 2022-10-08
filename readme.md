@@ -91,8 +91,6 @@ The logo for this website was picked from [PNG Repo](https://www.pngrepo.com/svg
 
 ### Index Page
 
-The index page welcomes the users to the site, provides them an explaination on how the site and quiz work and what the questions are about
-
 ![A Wireframe of the index page displaying the title, instructions and a button to start the quiz ](assets/images/readme/readme-index.jpg)
 
 ### Quiz Page
@@ -140,6 +138,7 @@ Adding a share button, so that users can share their score across social media, 
 Adding an alternate array of questions would increase the chances of return users, and increase the challenge by providing questions that former users do not expect
 
 ---
+
 ## Bugs 
 
 ### The Game did not always redirect users after a correct answer input
@@ -165,6 +164,7 @@ Here the error was being produced by the script page not connected to the result
 This was solved by removing obsolete code from before the implementation of the local data method
 
 ![An image showing removed redundant lines of code](assets/images/readme/final-score-fix.jpg)
+
 ---
 ## Testing
 ### Manual
@@ -173,9 +173,40 @@ All internal links within the project work. All external links are valid. There 
 
 ### Validators
 ---
-## Deployment
+## Deployment and Local Development
 
-This project was deployed using GitHub pages through this link: [Live page](https://alcl2000.github.io/PP2-Amy-lewis/). The repository is available on GitHub and is available for users to clone and fork [Link to repository here](https://github.com/alcl2000/PP2-Amy-lewis)
+### Deployment
+
+This project was deployed using GitHub pages through this link: [Live page](https://alcl2000.github.io/PP2-Amy-lewis/). 
+
+Deploying through GitHub pages
+- Log in/Sign up to GitHub
+- Open the repository 
+- Locate the settings
+- Click under 'Pages'
+- Under "Source", choose which branch to deploy (usally 'Main')
+- Choose which folder to deploy from, usually "/root"
+- Click "Save", then wait for it to be deployed
+- Your URL will be displayed above "Source"
+
+### Local Development
+
+The repository is available on GitHub and is available for users to clone and fork [Link to repository here](https://github.com/alcl2000/PP2-Amy-lewis)
+
+### How to Fork
+
+- Log in/ Sign up to GitHub 
+- Go to the repository for this project [https://github.com/alcl2000/PP2-Amy-lewis](Link Here)
+- Click fork on the right corner
+
+### How to Clone
+
+- Log in/ Sign up to GitHub 
+- Go to the repository for this project [https://github.com/alcl2000/PP2-Amy-lewis](Link Here)
+- Click on the dropdown 'Code' button, and select your prefered format
+- Copy the provided link 
+- Use the command 'git clone'and paste your link into your IDE's CLI
+
 ---
 ## Credits 
 
