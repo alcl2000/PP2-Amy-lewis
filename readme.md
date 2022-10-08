@@ -181,6 +181,8 @@ All internal links within the project work. All external links are valid. There 
 - [Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Falcl2000.github.io%2FPP2-Amy-lewis%2Fresults.html)
 
 #### The CSS Page was validated the same way
+
+- ![CSS](assets/images/readme/css-validation)
 ---
 ## Deployment and Local Development
 
