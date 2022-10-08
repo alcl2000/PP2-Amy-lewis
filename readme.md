@@ -156,6 +156,15 @@ This was solved by switching from using the array length to the hard coded numbe
 
 ![The tenary if statement that asks if the id is less than 11, if so iterate the quiz, if not end the quiz](assets/images/readme/next-question-fix.jpg)
 
+### Score error
+
+![A gif showing the quiz ending, before showing an error in the console](assets/images/readme/error-score.gif)
+
+Here the error was being produced by the script page not connected to the results page. The script was attempting to locate an element specific to the results page, that was being targetted by results.js instead. 
+
+This was solved by removing obsolete code from before the implementation of the local data method
+
+![An image showing removed redundant lines of code](assets/images/readme/final-score-fix.jpg)
 ---
 ## Testing
 ### Manual
