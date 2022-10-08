@@ -149,7 +149,7 @@ function nextQuestion(){
         displayQuestion(++id);
     }
     else{
-        if(id < 10){
+        if(id < 11){
             displayQuestion(++id);
         }
         else if( id >= questions.length){
@@ -158,7 +158,6 @@ function nextQuestion(){
         else{
             endQuiz(score);
         }
-
     }
 };
 /**
@@ -166,9 +165,7 @@ function nextQuestion(){
  */
 function endQuiz(score){
    window.location.replace('results.html');
-   localStorage.getItem('score')
-   let finalScore = document.getElementById('final-score');
-   finalScore.innerText = score;
+   localStorage.getItem('score');
 };
 /**
  *This function checks the id currently being displayed, and then checks all possible answers in the object to then display the correct answer in a box.
