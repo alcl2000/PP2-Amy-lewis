@@ -183,6 +183,11 @@ All internal links within the project work. All external links are valid. There 
 #### The CSS Page was validated the same way
 
 - ![CSS](assets/images/readme/css-validation)
+
+#### JavaScript Validators
+
+- ![script.js](assets/images/readme/quiz.js-jshint.jpg)
+- ![result.js](assets/images/readme/result.js-jshint.jpg)
 ---
 ## Deployment and Local Development
 
