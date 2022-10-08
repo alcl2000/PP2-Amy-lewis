@@ -167,11 +167,20 @@ This was solved by removing obsolete code from before the implementation of the 
 
 ---
 ## Testing
+
 ### Manual
 
 All internal links within the project work. All external links are valid. There are no errors in the console during use.
 
 ### Validators
+
+#### All three HTML pages were passed through the official W3C code validator
+
+- [Index](https://validator.w3.org/nu/?doc=https%3A%2F%2Falcl2000.github.io%2FPP2-Amy-lewis%2Findex.html)
+- [Quiz](https://validator.w3.org/nu/?doc=https%3A%2F%2Falcl2000.github.io%2FPP2-Amy-lewis%2Fquiz.html%3F)
+- [Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Falcl2000.github.io%2FPP2-Amy-lewis%2Fresults.html)
+
+#### The CSS Page was validated the same way
 ---
 ## Deployment and Local Development
 
