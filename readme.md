@@ -10,13 +10,20 @@ This Quiz was designed for fans to test their knowledge of the show and to have 
 ## Contents
 
 - [User Experience](#user-experience)
+    -[User Stories](#user-stories)
 - [Design Choices](#design-choices)
     -[Colour Selection](#colour-selection)
     -[Typography](#typography)
 - [Wireframes](#wireframes)
 - [Features](#features)
+    -[Index](#index-page-1)
+    -[Quiz](#quiz-page-1)
+    -[Results](#results-page-1)
+    -[Features to be added](#features-to-be-added)
 - [Bugs](#bugs)
 - [Testing](#testing)
+    -[Manual](#manual)
+    -[Validators](#validators)
 - [Credits](#credits)
 
 ---
@@ -50,7 +57,6 @@ To celebrate, this quiz was created to increase fan engagement between seasons a
 ## Returning user goals
 
 - I want to be able to compare my score to my previous score
-
 
 ---
 ## Design Choices
@@ -99,6 +105,7 @@ The logo for this website was picked from [PNG Repo](https://www.pngrepo.com/svg
 ### Quiz Page
 
 ![A Wireframe of the quiz page showing the quiz question, the question number and score number, along with the answer buttons](assets/images/readme/readme-quiz.jpg)
+
 ### Results page
 
 ![A Wireframe of the results page showing the final score, and a short paragraph detailing their results](assets/images/readme/readme-result.jpg)
@@ -119,6 +126,10 @@ The index page features the title of the quiz, along with a short description of
 ### Title
 
 ![A pink gothic script reading 'What We Do in The Shadows Quiz'](assets/images/readme/title-ss.jpg)
+
+### Logo
+
+![A screenshot of cartoon vampire teeth ](assets/images/readme/logo-ss.jpg)
 
 ### Rules
 
@@ -166,23 +177,25 @@ This button allows users to skip the question if they are unsure of the answer, 
 
 ## Results Page
 
-The results page displays the user's final score at the end of the quiz, along with a short paragraph describing their results.
+The results page displays the user's final score at the end of the quiz, along with a short paragraph describing their results. In a comical way to encourage them to re-watch the show and re-take the quiz.
 
 ### Results Title
 
-![]()
+![A title that displays the title 'Regular Human Guy' in pink gothic script, meaning the user got many answers wrong](assets/images/readme/result-title-ss.jpg)
 
 ### Results Text
 
-![]()
+![A short paragraph that displays the users results and performance in the quiz](assets/images/readme/result-text-ss.jpg)
 
 ### Return buttons
 
-![]()
+![Two buttons that allow the user to re-take the quiz or return home](assets/images/readme/results-buttons-ss.jpg)
 
 ### Correct and Incorrect alert
 
 ![An alert that says 'correct' in the pink gothic script](assets/images/readme/correct-alert-ss.jpg) ![An alert that says 'incorrect' in the pink gothic script](assets/images/readme/incorrect-alert-ss.jpg)
+
+The alerts are a direct way of letting the user know if they have gotten the answer incorrect or correct, to reduce any possible confusion
 
 ### Correction Box
 
@@ -243,7 +256,28 @@ This was solved by removing obsolete code from before the implementation of the 
 
 ### Manual
 
-All internal links within the project work. All external links are valid. There are no errors in the console during use.
+- All internal links within the project work
+-  All external links are valid 
+- There are no errors in the console during use.
+
+The site was built using HTML, CSS and JavaScript only annd as such, can work on all browsers, during development and testing the following browsers were used without error:
+- Chrome
+- Chrome mobile
+- FireFox
+- Microsoft Edge
+- Safari mobile
+
+Due to the nature of the code used, all devices are supported.
+
+The following breakpoints were implemented to allow for cross-device performance
+
+|Screen Type | BreakPoint |
+|---|---|
+|Mobile | Deafault Protocol|
+|Horizontal Mobile | 400px|
+|Small Tablet | 500px|
+|Large Tablet | 900px|
+|Large Screens and above | 1400px|
 
 ### Validators
 
@@ -337,12 +371,15 @@ This project is built using HTML, CSS and JavaScript only
 All text on this site was written by myself, with the rights of 'What We Do in the Shadows' belonging to the FX network and the other copyright holders
 
 #### Google Fonts used
+
 - [PT Serif](https://fonts.google.com/?query=ParaType&category=Serif,Monospace&preview.text=Question%201:&preview.text_type=custom)
 - [Roboto Condensed](https://fonts.google.com/specimen/Roboto+Condensed?query=roboto&category=Serif,Sans+Serif,Display,Monospace&preview.text=Question%201:&preview.text_type=custom)
 - [Grenze Gotisch](https://fonts.google.com/specimen/Grenze+Gotisch)
+
 #### Tutorials
 
 [JS quiz tutorial](https://www.geeksforgeeks.org/how-to-create-a-simple-javascript-quiz/)
+
 ### With thanks
 
 Thanks to my mentor, Sammy, Ed from tutor support and the 'What We Do In The Shadows' discord for help with ideas, testing, and JavaScript wrangling
