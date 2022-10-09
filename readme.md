@@ -2,6 +2,7 @@
 
 ![An 'Am I Responsive' mockup showing a website with a logo showing large vampire teeth](assets/images/readme/am-i-responsive.jpg)
 
+[Live link](https://alcl2000.github.io/PP2-Amy-lewis/)
 'What We do in The Shadows is an New Zealand/American Horror comedy film and TV show. It recently aired its 4th season in the United States and has gathered a large online following
 This Quiz was designed for fans to test their knowledge of the show and to have fun sharing their scores.
 
@@ -256,10 +257,33 @@ This was solved by removing obsolete code from before the implementation of the 
 
 ### Manual
 
+#### Testing User Stories
+
+|User Story|Aim Achieved?|
+|---|---|
+|First Time Users ||
+|I want to know how the quiz works|The index page explains the rules and that there is no timer|
+|I want to know what content will be in the quiz| The index page states that all four seasons will be included|
+|I want to have a wide range of questions to answer| The quiz has 12 questions to answer, three for each season, due to time constraints I was not able to add different arrays of varying difficulty|
+|Returning User Goals||
+|I want to be able to compare my score to my previous score| The results page clearly shows the User's results and a short tagline explaining how they did|
+
+#### Full Testing
+
+Additional testing and feedback was supplied by my friends on a variety of devices
+
+|Feature | Expected Outcome | Testing Outcome | Result
+|---|---|---|---|
+|Home Button| On click, should return the user to the index page| On click, the button returns users | Pass
+|GitHub Link | On Click, should open a new tab for the user to be taken to my GitHub profile | On click, it opens a new tab to my GitHub| Pass|
+|LinkedIn Link| On Click, should open a new tab for the user to be taken to my LinkedIn profile | On click, it opens a new tab to my LinkedIn Profile | Pass
+|Index|||
+|'Let's Play' Button| On Click, should take users to the quiz page| On click, takes users to the Quiz page| Pass
 - All internal links within the project work
 -  All external links are valid 
 - There are no errors in the console during use.
 
+Testing was performed during development and 
 The site was built using HTML, CSS and JavaScript only annd as such, can work on all browsers, during development and testing the following browsers were used without error:
 - Chrome
 - Chrome mobile
