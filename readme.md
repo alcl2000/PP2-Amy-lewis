@@ -274,6 +274,7 @@ Additional testing and feedback was supplied by my friends on a variety of devic
 
 |Feature | Expected Outcome | Testing Outcome | Result
 |---|---|---|---|
+|Nav Bar|||
 |Home Button| On click, should return the user to the index page| On click, the button returns users | Pass
 |GitHub Link | On Click, should open a new tab for the user to be taken to my GitHub profile | On click, it opens a new tab to my GitHub| Pass|
 |LinkedIn Link| On Click, should open a new tab for the user to be taken to my LinkedIn profile | On click, it opens a new tab to my LinkedIn Profile | Pass|
@@ -281,13 +282,13 @@ Additional testing and feedback was supplied by my friends on a variety of devic
 |'Let's Play' Button| On Click, should take users to the quiz page| On click, takes users to the Quiz page| Pass|
 |Quiz Page|||
 |Score Counter | On a correct answer input, the score should iterate by 1| Correct answers were supplied, both individually and all at once, successfully iterating each time| Pass|
-|Question counter| On each iteration
-| Question|
-|Corrected Answer
-|Incorrect Alert
-|Correct Alert
-|Answer Buttons
-|Next Question Button
+|Question counter| On each iteration, the question number should increase by 1| When the question is answered correctly or 'Next Question' is pressed the question counter increases by 1| Pass|
+| Question| The Question should Iterate with the question counter, following the array | On pressing 'Next Question' or answering correctly the question should change| When the question number iterates, the question changes| Pass|
+|Corrected Answer| When the question is answered incorrectly, the correct answer should drop below the question| When answered incorrectly, the box reveals the correct answer according to the array| Pass|
+|Incorrect Alert| When the question is answered incorrectly an alert pops up to inform the user they answered incorrectly| When an incorrect answer is supplied, the alert appears| Pass|
+|Correct Alert|When the question is answered incorrectly an alert pops up to inform the user they answered correctly|When an correct answer is supplied, the alert appears| Pass|
+|Answer Buttons |The buttons should display the answers from the array and change with the question, when the user answer is incorrect they event listener should be removed|When the question iterates, the value of the buttons changes. When an incorrect answer is supplied the buttons no longer work |Pass|
+|Next Question Button| The button should iterate the question, whether or not an answer has been supplied| On click, The button iterates, even if a question has not been answered| Pass|
 |Results page|||
 |Results Title
 |Final Score
