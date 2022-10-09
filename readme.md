@@ -276,9 +276,25 @@ Additional testing and feedback was supplied by my friends on a variety of devic
 |---|---|---|---|
 |Home Button| On click, should return the user to the index page| On click, the button returns users | Pass
 |GitHub Link | On Click, should open a new tab for the user to be taken to my GitHub profile | On click, it opens a new tab to my GitHub| Pass|
-|LinkedIn Link| On Click, should open a new tab for the user to be taken to my LinkedIn profile | On click, it opens a new tab to my LinkedIn Profile | Pass
+|LinkedIn Link| On Click, should open a new tab for the user to be taken to my LinkedIn profile | On click, it opens a new tab to my LinkedIn Profile | Pass|
 |Index|||
-|'Let's Play' Button| On Click, should take users to the quiz page| On click, takes users to the Quiz page| Pass
+|'Let's Play' Button| On Click, should take users to the quiz page| On click, takes users to the Quiz page| Pass|
+|Quiz Page|||
+|Score Counter | On a correct answer input, the score should iterate by 1| Correct answers were supplied, both individually and all at once, successfully iterating each time| Pass|
+|Question counter| On each iteration
+| Question|
+|Corrected Answer
+|Incorrect Alert
+|Correct Alert
+|Answer Buttons
+|Next Question Button
+|Results page|||
+|Results Title
+|Final Score
+|Results Text
+|'Return Home' button
+|'Try Again' button'
+
 - All internal links within the project work
 -  All external links are valid 
 - There are no errors in the console during use.
