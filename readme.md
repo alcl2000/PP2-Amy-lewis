@@ -190,6 +190,16 @@ All internal links within the project work. All external links are valid. There 
 The undefined variable is swal - the sweet alerts library in use on my page, the expresson on line 151 is a nested if statement.
 
 - ![result.js](assets/images/readme/result.js-jshint.jpg)
+
+### LightHouse Validation
+
+![Index.html validation](assets/images/readme/index-lighthouse.jpg)
+- The lowered performance score is due to the image and fonts load response
+
+![Quiz.html Validation](assets/images/readme/quiz-lighthouse.jpg)
+
+![Results.html validation](assets/images/readme/result-lighthouse.jpg)
+
 ---
 ## Deployment and Local Development
 
