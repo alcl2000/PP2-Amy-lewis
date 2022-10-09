@@ -180,6 +180,16 @@ The results page displays the user's final score at the end of the quiz, along w
 
 ![]()
 
+### Correct and Incorrect alert
+
+![An alert that says 'correct' in the pink gothic script](assets/images/readme/correct-alert-ss.jpg) ![An alert that says 'incorrect' in the pink gothic script](assets/images/readme/incorrect-alert-ss.jpg)
+
+### Correction Box
+
+![A green outlined box stating "The correct answer was: Jeff", Jeff is underlined in green](assets/images/readme/correction-ss.jpg)
+
+This box corrects users when they get answer wrong, it displays the correct answer according to the question id
+
 ### Favicon
 
 ![A screenshot showing the vampire teeth logo next to the browser](assets/images/readme/favicon-feature.jpg)
