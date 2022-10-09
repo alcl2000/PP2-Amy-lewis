@@ -290,18 +290,17 @@ Additional testing and feedback was supplied by my friends on a variety of devic
 |Answer Buttons |The buttons should display the answers from the array and change with the question, when the user answer is incorrect they event listener should be removed|When the question iterates, the value of the buttons changes. When an incorrect answer is supplied the buttons no longer work |Pass|
 |Next Question Button| The button should iterate the question, whether or not an answer has been supplied| On click, The button iterates, even if a question has not been answered| Pass|
 |Results page|||
-|Results Title
-|Final Score
-|Results Text
-|'Return Home' button
-|'Try Again' button'
+|Results Title| The title should change dependant on the score the user achieves, allowing users to compare scores| On supplying different scores through local.data() and manual quiz use the text changes |Pass|
+|Final Score| The inner text should display the user score as a number to show the result| On supplying different scores through manual testing and local.data() the inner value of the score changes| Pass|
+|Results Text |The title should change dependant on the score the user achieves, allowing users to compare scores|On supplying different scores through local.data() and manual quiz use the text changes|Pass|
+|'Return Home' button| On click, the button should return the user home| When pressed, the button returns the user home| Pass|
+|'Try Again' button'| On click, the button should take the user to the quiz page| When pressed, the quiz starts from the first question|Pass|
 
-- All internal links within the project work
 -  All external links are valid 
 - There are no errors in the console during use.
 
 Testing was performed during development and 
-The site was built using HTML, CSS and JavaScript only annd as such, can work on all browsers, during development and testing the following browsers were used without error:
+The site was built using HTML, CSS and JavaScript only and as such, can work on all browsers, during development and testing the following browsers were used without error:
 - Chrome
 - Chrome mobile
 - FireFox
