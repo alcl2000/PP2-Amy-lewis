@@ -275,8 +275,7 @@ The following breakpoints were implemented to allow for cross-device performance
 |---|---|
 |Mobile | Deafault Protocol|
 |Horizontal Mobile | 400px|
-|Small Tablet | 500px|
-|Large Tablet | 900px|
+|Tablet | 900px|
 |Large Screens and above | 1400px|
 
 ### Validators
