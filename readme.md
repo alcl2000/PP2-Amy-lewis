@@ -59,9 +59,12 @@ To celebrate, this quiz was created to increase fan engagement between seasons a
 
 The colours for this website were picked from various promotional materials for the show
 ![An image showing the promotional posters for 'What We Do in the Shadows' with some colours picked out](assets/images/readme/colour-picker.jpg)
-I then picked out similar and complimentary colours to match the ones picked from these posters
+- I then picked out similar and complimentary colours to match the ones picked from these posters
+- I decided on using lighter colours for accessibilty and contrast
+- And brighter tones to make the website seem more appealing
 ![A colour palette showing various shades of pinks, purples and greens picked from the promotional images](assets/images/readme/picked-out-colors.jpg)
-Not all of these colours were used in the final project, but having them available while developing allowed me to consider mulitple options for each element
+- Not all of these colours were used in the final project, but having them available while developing allowed me to consider mulitple options for each element
+- Eventually I decided to stick with reds and purples to create a sense of cohesion and to fit the vampire theme
 
 ### Typography
 
@@ -105,23 +108,83 @@ The logo for this website was picked from [PNG Repo](https://www.pngrepo.com/svg
 
 ### Header
 
+![A purple background with darker purple logos representing: Home, GitHub and LinkedIn](assets/images/readme/header-ss.jpg)
+
 The header is present on every page. It has the home home button along with a link to my Git hub and linked in available on each page.
-### Index Page
+
+## Index Page
 
 The index page features the title of the quiz, along with a short description of the rules. There is also a button to access the quiz. 
-### Quiz page
+
+### Title
+
+![A pink gothic script reading 'What We Do in The Shadows Quiz'](assets/images/readme/title-ss.jpg)
+
+### Rules
+
+![A descriptive ruleset to let users know how the quiz works](assets/images/readme/rules-ss.jpg)
+
+### Enter Button
+
+![A button that says 'lets play' which will take users to the game](assets/images/readme/lets-play-ss.jpg)
+
+
+## Quiz page
 
 The quiz page Features the main quiz loop for the players. It displays the quiz title and number. 
 It also shows a quiz score for the player. 
+
+### Question
+
+![A pink gothic script that reads 'What is the name of Nadja's reincarnated lover?'](assets/images/readme/question-ss.jpg)
 When a question is answered the quiz page will either confirm the user got the question correct or show them the correct answer if they got the answer wrong.
+
+### Question Number
+
+![A box that says 'Question: 0' the zero is in pink](assets/images/readme/question-box-ss.jpg)
+
+This box allows the user to clearly see which question they are on, as well as know how many questions are left
+
+### Score Box
+
+![A box that says 'Score: 0'](assets/images/readme/score-box-ss.jpg)
+
+This box allows users to clearly see how many points they have scored so far, it iterates every time they answer correctly
+
 ### Buttons
 
-The buttons display the correct answer sets for each question 
-- Incorrect initial user input does not allow for re-selection when correct answer is displayed
+![Four option buttons each with different answers to the question](assets/images/readme/buttons-ss.jpg)
 
-### Results Page
+The buttons display the correct answer sets for each question 
+-Incorrect initial user input does not allow for re-selection when correct answer is displayed, as the event listeners are removed
+
+### Next Question Button
+
+![A button that says 'Next Question'](assets/images/readme/next-question-ss.jpg)
+
+This button allows users to skip the question if they are unsure of the answer, or after they get an answer incorrect, as the event listeners are removed in this case
+
+## Results Page
 
 The results page displays the user's final score at the end of the quiz, along with a short paragraph describing their results.
+
+### Results Title
+
+![]()
+
+### Results Text
+
+![]()
+
+### Return buttons
+
+![]()
+
+### Favicon
+
+![A screenshot showing the vampire teeth logo next to the browser](assets/images/readme/favicon-feature.jpg)
+
+The Favicon is the website's logo and helps to make the website standout amongst other tabs 
 
 ## Features to be added
 
