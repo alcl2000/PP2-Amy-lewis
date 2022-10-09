@@ -296,9 +296,6 @@ Additional testing and feedback was supplied by my friends on a variety of devic
 |'Return Home' button| On click, the button should return the user home| When pressed, the button returns the user home| Pass|
 |'Try Again' button'| On click, the button should take the user to the quiz page| When pressed, the quiz starts from the first question|Pass|
 
--  All external links are valid 
-- There are no errors in the console during use.
-
 Testing was performed during development and 
 The site was built using HTML, CSS and JavaScript only and as such, can work on all browsers, during development and testing the following browsers were used without error:
 - Chrome
