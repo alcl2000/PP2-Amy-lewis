@@ -2,7 +2,7 @@
 
 ![An 'Am I Responsive' mockup showing a website with a logo showing large vampire teeth](assets/images/readme/am-i-responsive.jpg)
 
-[Live link](https://alcl2000.github.io/PP2-Amy-lewis/)
+[Live link](https://alcl2000.github.io/PP2-Amy-lewis/)<br>
 'What We do in The Shadows is an New Zealand/American Horror comedy film and TV show. It recently aired its 4th season in the United States and has gathered a large online following
 This Quiz was designed for fans to test their knowledge of the show and to have fun sharing their scores.
 
@@ -12,19 +12,19 @@ This Quiz was designed for fans to test their knowledge of the show and to have 
 
 - [User Experience](#user-experience)
     -[User Stories](#user-stories)
-- [Design Choices](#design-choices)
-    -[Colour Selection](#colour-selection)
-    -[Typography](#typography)
+- [Design Choices](#design-choices)<br>
+    -[Colour Selection](#colour-selection)<br>
+    -[Typography](#typography)<br>
 - [Wireframes](#wireframes)
-- [Features](#features)
-    -[Index](#index-page-1)
-    -[Quiz](#quiz-page-1)
-    -[Results](#results-page-1)
-    -[Features to be added](#features-to-be-added)
+- [Features](#features)<br>
+    -[Index](#index-page-1)<br>
+    -[Quiz](#quiz-page-1)<br>
+    -[Results](#results-page-1)<br>
+    -[Features to be added](#features-to-be-added)<br>
 - [Bugs](#bugs)
-- [Testing](#testing)
-    -[Manual](#manual)
-    -[Validators](#validators)
+- [Testing](#testing)<br>
+    -[Manual](#manual)<br>
+    -[Validators](#validators)<br>
 - [Credits](#credits)
 
 ---
@@ -128,18 +128,25 @@ The index page features the title of the quiz, along with a short description of
 
 ![A pink gothic script reading 'What We Do in The Shadows Quiz'](assets/images/readme/title-ss.jpg)
 
+The title clearly shows the user what site they're on and sets the tone for the website
+
 ### Logo
 
 ![A screenshot of cartoon vampire teeth ](assets/images/readme/logo-ss.jpg)
+
+The logo is a cartoon set of vampire teeth, the logo is simple and shows the user clearly what the site is about
 
 ### Rules
 
 ![A descriptive ruleset to let users know how the quiz works](assets/images/readme/rules-ss.jpg)
 
+Below the logo are a short set of rules which allow the user to quickly understand what the quiz is about and how to use it.
+
 ### Enter Button
 
 ![A button that says 'lets play' which will take users to the game](assets/images/readme/lets-play-ss.jpg)
 
+The enter button lets the user start the quiz.
 
 ## Quiz page
 
@@ -184,13 +191,19 @@ The results page displays the user's final score at the end of the quiz, along w
 
 ![A title that displays the title 'Regular Human Guy' in pink gothic script, meaning the user got many answers wrong](assets/images/readme/result-title-ss.jpg)
 
+The results title is a fun way for users to compare results with others
+
 ### Results Text
 
 ![A short paragraph that displays the users results and performance in the quiz](assets/images/readme/result-text-ss.jpg)
 
+The results text displays a fun tag to encourage the user to play the quiz again and compare their results to others
+
 ### Return buttons
 
 ![Two buttons that allow the user to re-take the quiz or return home](assets/images/readme/results-buttons-ss.jpg)
+
+Two buttons that allow users to navigate without using browser buttons
 
 ### Correct and Incorrect alert
 
